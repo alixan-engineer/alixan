@@ -3,7 +3,7 @@ const { t } = useI18n()
 const route = useRoute()
 const requestUrl = useRequestURL()
 
-const siteUrl = 'https://alixan.kz'
+const siteUrl = 'https://alixan-engineer.github.io'
 const siteOrigin = import.meta.dev ? requestUrl.origin : siteUrl
 const currentUrl = computed(() => `${siteOrigin}${route.path === '/' ? '/' : route.path}`)
 const ogImageUrl = `${siteOrigin}/og-image.png`

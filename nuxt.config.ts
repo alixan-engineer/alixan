@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/i18n', '@nuxtjs/sitemap'],
   site: {
-    url: 'https://alixan.kz',
+    url: 'https://alixan-engineer.github.io',
     name: 'Alixan',
   },
   components: [
@@ -65,7 +65,7 @@ export default defineNuxtConfig({
     },
   },
   i18n: {
-    baseUrl: 'https://alixan.kz',
+    baseUrl: 'https://alixan-engineer.github.io',
     strategy: 'prefix_except_default',
     defaultLocale: 'en',
     lazy: true,
