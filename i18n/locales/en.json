@@ -1,0 +1,150 @@
+{
+  "common": {
+    "brand": "Alixan",
+    "loader": "Ecosystem"
+  },
+  "seo": {
+    "title": "Alixan - Products, UI Systems and Startups from Kazakhstan",
+    "description": "Personal tech ecosystem of Alikhan: products, open-source UI system, portfolio and startup experiments from Kazakhstan.",
+    "imageAlt": "Alixan - Products, UI systems and startups from Kazakhstan"
+  },
+  "header": {
+    "language": "Language",
+    "menu": "Open navigation",
+    "portfolioCta": "Portfolio",
+    "uiCta": "Alixan UI",
+    "nav": {
+      "ecosystem": "Ecosystem",
+      "products": "Products",
+      "ui": "UI System",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    }
+  },
+  "hero": {
+    "badge": "Personal tech ecosystem from Kazakhstan",
+    "title": "Building products, UI systems and startups from Kazakhstan.",
+    "description": "I'm Alikhan, a full-stack engineer and founder building digital products, open-source UI tools and startup experiments.",
+    "primaryCta": "Explore ecosystem",
+    "secondaryCta": "View portfolio",
+    "panelLabel": "Alixan ecosystem",
+    "panelTitle": "Products, systems and experiments connected by one founder mindset.",
+    "panelText": "A single place for product building, interface systems and startup execution.",
+    "nodes": {
+      "products": "Products",
+      "ui": "UI System",
+      "portfolio": "Portfolio"
+    }
+  },
+  "ecosystem": {
+    "eyebrow": "Ecosystem",
+    "title": "Three directions, one founder system.",
+    "description": "Alixan brings together product work, engineering identity and an open UI layer that can grow into a broader ecosystem.",
+    "items": {
+      "portfolio": {
+        "title": "Portfolio",
+        "description": "Resume, work experience, case studies and engineering background.",
+        "cta": "Open portfolio"
+      },
+      "ui": {
+        "title": "Alixan UI",
+        "description": "Open-source UI system for building SaaS, dashboards and product interfaces faster.",
+        "cta": "Open UI library"
+      },
+      "products": {
+        "title": "Products",
+        "description": "Startup experiments, marketplaces, tools and products built from Kazakhstan.",
+        "cta": "See products"
+      },
+      "public": {
+        "title": "Build in public",
+        "description": "Public journey of building products, UI systems and engineering content.",
+        "cta": "Follow journey"
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "A short founder profile, not a resume page.",
+    "paragraph1": "Alikhan is a full-stack developer from Almaty, Kazakhstan with a strong frontend background and a product mindset.",
+    "paragraph2": "I build web, mobile and backend systems using Nuxt, Angular, Flutter, NestJS and MongoDB.",
+    "paragraph3": "His focus is SaaS, marketplaces, UI systems, monetization and startup execution.",
+    "cta": "Read full resume"
+  },
+  "products": {
+    "eyebrow": "Products",
+    "title": "Products and startup directions inside the Alixan ecosystem.",
+    "description": "These are not random side projects. Each one explores a market, a workflow or a product system worth building seriously.",
+    "items": {
+      "takta": {
+        "label": "Marketplace",
+        "title": "Takta.kz",
+        "description": "Mobile classifieds platform for Kazakhstan with mobile app, web platform, backend and realtime chat.",
+        "stack": "Flutter, Nuxt, NestJS, MongoDB"
+      },
+      "ui": {
+        "label": "Open Source",
+        "title": "Alixan UI",
+        "description": "Personal open-source UI system inspired by shadcn, built to craft SaaS and e-commerce projects faster.",
+        "stack": "Vue, Nuxt, TypeScript, SCSS"
+      },
+      "wedding": {
+        "label": "Startup Idea",
+        "title": "Wedding startup",
+        "description": "A new startup idea for organizing weddings and toys in Kazakhstan: guests, budget, invitations and vendor catalog.",
+        "stack": "Nuxt, Flutter, NestJS"
+      },
+      "freelance": {
+        "label": "Marketplace Experiment",
+        "title": "FreelancePlus",
+        "description": "A freelance marketplace experiment with online payments, profiles, bids and order management.",
+        "stack": "Angular, NestJS, MongoDB"
+      }
+    }
+  },
+  "uiSection": {
+    "eyebrow": "UI System",
+    "title": "Design system for fast product building.",
+    "description": "Alixan UI is a growing component system for building modern SaaS, dashboards, landing pages and e-commerce products with clean Vue and Nuxt components.",
+    "cta": "Open UI Library",
+    "preview": {
+      "button": "Primary Button",
+      "secondaryButton": "Ghost Button",
+      "input": "Input component preview",
+      "badgeOne": "Badge",
+      "badgeTwo": "Dashboard",
+      "modalLabel": "Modal mockup",
+      "modalTitle": "Launch flows with reusable surfaces.",
+      "dashboardLabel": "Dashboard card",
+      "dashboardValue": "Active design tokens"
+    }
+  },
+  "buildPublic": {
+    "eyebrow": "Build in public",
+    "title": "Building in public.",
+    "description": "I share the process of building startups, UI systems and products from Kazakhstan: design, code, mistakes, launches and growth.",
+    "socials": {
+      "tiktok": "TikTok",
+      "instagram": "Instagram",
+      "youtube": "YouTube",
+      "telegram": "Telegram",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's build something useful.",
+    "description": "Open to collaborations, product ideas, engineering opportunities and startup partnerships.",
+    "primaryCta": "Contact me",
+    "secondaryCta": "View portfolio"
+  },
+  "footer": {
+    "caption": "Products, interfaces and startup execution from Kazakhstan.",
+    "products": "Products",
+    "portfolio": "Portfolio",
+    "ui": "UI System",
+    "social": "Social links",
+    "copyright": "© 2026 Alixan. All rights reserved."
+  }
+}

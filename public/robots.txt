@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow:
+
+Sitemap: https://alixan.kz/sitemap_index.xml

@@ -1,0 +1,150 @@
+{
+  "common": {
+    "brand": "Alixan",
+    "loader": "Экосистема"
+  },
+  "seo": {
+    "title": "Alixan - продукты, UI-системы и стартапы из Казахстана",
+    "description": "Персональная tech-экосистема Алихана: продукты, open-source UI system, портфолио и стартап-эксперименты из Казахстана.",
+    "imageAlt": "Alixan - продукты, UI-системы и стартапы из Казахстана"
+  },
+  "header": {
+    "language": "Язык",
+    "menu": "Открыть навигацию",
+    "portfolioCta": "Портфолио",
+    "uiCta": "Alixan UI",
+    "nav": {
+      "ecosystem": "Экосистема",
+      "products": "Продукты",
+      "ui": "UI System",
+      "portfolio": "Портфолио",
+      "contact": "Контакты"
+    }
+  },
+  "hero": {
+    "badge": "Персональная tech-экосистема из Казахстана",
+    "title": "Строю продукты, UI-системы и стартапы из Казахстана.",
+    "description": "Я Алихан, full-stack engineer и founder. Создаю цифровые продукты, open-source UI-инструменты и стартап-эксперименты.",
+    "primaryCta": "Посмотреть экосистему",
+    "secondaryCta": "Открыть портфолио",
+    "panelLabel": "Экосистема Alixan",
+    "panelTitle": "Продукты, системы и эксперименты, связанные одним founder-подходом.",
+    "panelText": "Одна точка входа в продуктовую разработку, интерфейсные системы и запуск стартапов.",
+    "nodes": {
+      "products": "Продукты",
+      "ui": "UI System",
+      "portfolio": "Портфолио"
+    }
+  },
+  "ecosystem": {
+    "eyebrow": "Экосистема",
+    "title": "Три направления, одна инженерная система.",
+    "description": "Alixan объединяет продуктовую работу, инженерную идентичность и open-source UI-слой, который может вырасти в полноценную экосистему.",
+    "items": {
+      "portfolio": {
+        "title": "Портфолио",
+        "description": "Резюме, опыт работы, кейсы и инженерный бэкграунд.",
+        "cta": "Открыть портфолио"
+      },
+      "ui": {
+        "title": "Alixan UI",
+        "description": "Open-source UI system для более быстрой сборки SaaS, dashboards и продуктовых интерфейсов.",
+        "cta": "Открыть UI library"
+      },
+      "products": {
+        "title": "Продукты",
+        "description": "Стартап-эксперименты, маркетплейсы, инструменты и продукты, которые строятся из Казахстана.",
+        "cta": "Смотреть продукты"
+      },
+      "public": {
+        "title": "Build in public",
+        "description": "Публичный путь создания продуктов, UI-систем и инженерного контента.",
+        "cta": "Следить за процессом"
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "Кто я",
+    "title": "Коротко обо мне, без длинного CV на главной.",
+    "paragraph1": "Алихан — full-stack разработчик из Алматы, Казахстан, с сильным frontend-бэкграундом и продуктовым мышлением.",
+    "paragraph2": "Я строю web, mobile и backend-системы с помощью Nuxt, Angular, Flutter, NestJS и MongoDB.",
+    "paragraph3": "Фокус — SaaS, маркетплейсы, UI-системы, монетизация и запуск стартапов.",
+    "cta": "Читать полное резюме"
+  },
+  "products": {
+    "eyebrow": "Продукты",
+    "title": "Продукты и стартап-направления внутри экосистемы Alixan.",
+    "description": "Это не случайные сайд-проекты. Каждый из них проверяет рынок, сценарий использования или продуктовую систему, которую хочется строить всерьёз.",
+    "items": {
+      "takta": {
+        "label": "Маркетплейс",
+        "title": "Takta.kz",
+        "description": "Мобильная classifieds-платформа для Казахстана с мобильным приложением, web-платформой, backend и realtime chat.",
+        "stack": "Flutter, Nuxt, NestJS, MongoDB"
+      },
+      "ui": {
+        "label": "Open Source",
+        "title": "Alixan UI",
+        "description": "Персональная open-source UI system в духе shadcn для более быстрой сборки SaaS и e-commerce проектов.",
+        "stack": "Vue, Nuxt, TypeScript, SCSS"
+      },
+      "wedding": {
+        "label": "Стартап-идея",
+        "title": "Wedding startup",
+        "description": "Новая идея стартапа для организации свадеб и той в Казахстане: гости, бюджет, приглашения и каталог подрядчиков.",
+        "stack": "Nuxt, Flutter, NestJS"
+      },
+      "freelance": {
+        "label": "Marketplace experiment",
+        "title": "FreelancePlus",
+        "description": "Эксперимент с freelance marketplace: онлайн-оплаты, профили, ставки и управление заказами.",
+        "stack": "Angular, NestJS, MongoDB"
+      }
+    }
+  },
+  "uiSection": {
+    "eyebrow": "UI System",
+    "title": "Дизайн-система для быстрой сборки продуктов.",
+    "description": "Alixan UI — растущая компонентная система для современных SaaS, dashboards, landing pages и e-commerce продуктов на чистых Vue и Nuxt компонентах.",
+    "cta": "Открыть UI Library",
+    "preview": {
+      "button": "Primary Button",
+      "secondaryButton": "Ghost Button",
+      "input": "Превью input-компонента",
+      "badgeOne": "Badge",
+      "badgeTwo": "Dashboard",
+      "modalLabel": "Modal mockup",
+      "modalTitle": "Запускай новые сценарии на переиспользуемых surface-компонентах.",
+      "dashboardLabel": "Dashboard card",
+      "dashboardValue": "Активные design tokens"
+    }
+  },
+  "buildPublic": {
+    "eyebrow": "Build in public",
+    "title": "Строю публично.",
+    "description": "Я делюсь процессом создания стартапов, UI-систем и продуктов из Казахстана: дизайн, код, ошибки, релизы и рост.",
+    "socials": {
+      "tiktok": "TikTok",
+      "instagram": "Instagram",
+      "youtube": "YouTube",
+      "telegram": "Telegram",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "contact": {
+    "eyebrow": "Контакт",
+    "title": "Давай соберём что-то полезное.",
+    "description": "Открыт к коллаборациям, продуктовым идеям, инженерным возможностям и стартап-партнёрствам.",
+    "primaryCta": "Связаться",
+    "secondaryCta": "Открыть портфолио"
+  },
+  "footer": {
+    "caption": "Продукты, интерфейсы и запуск стартапов из Казахстана.",
+    "products": "Продукты",
+    "portfolio": "Портфолио",
+    "ui": "UI System",
+    "social": "Соцсети",
+    "copyright": "© 2026 Alixan. Все права защищены."
+  }
+}
