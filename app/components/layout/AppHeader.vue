@@ -48,24 +48,41 @@ watch(
       </div>
     </div>
 
-    <Transition name="menu-fade">
-      <div v-if="isMenuOpen" class="mobile-menu">
-        <div class="container mobile-menu__inner">
-          <nav class="mobile-menu__nav" aria-label="Mobile">
-            <a v-for="item in navItems" :key="item.href" :href="item.href" @click="isMenuOpen = false">
-              {{ item.label }}
-            </a>
-          </nav>
+    <Teleport to="body">
+      <Transition name="menu-fade">
+        <div v-show="isMenuOpen" class="mobile-menu">
+          <div class="container mobile-menu__inner">
+            <div class="mobile-menu__header">
+              <NuxtLink class="site-header__brand" :to="localePath('/')" @click="isMenuOpen = false">
+                {{ t('common.brand') }}
+              </NuxtLink>
+              <button
+                class="mobile-menu__close"
+                type="button"
+                :aria-label="t('header.closeMenu')"
+                @click="isMenuOpen = false"
+              >
+                <span />
+                <span />
+              </button>
+            </div>
 
-          <div class="mobile-menu__footer">
-            <LanguageSwitcher />
-            <AppButton href="https://portfolio.alixan.kz" variant="ghost" block>
-              {{ t('header.portfolioCta') }}
-            </AppButton>
-            <AppButton href="https://ui.alixan.kz" block>{{ t('header.uiCta') }}</AppButton>
+            <nav class="mobile-menu__nav" aria-label="Mobile">
+              <a v-for="item in navItems" :key="item.href" :href="item.href" @click="isMenuOpen = false">
+                {{ item.label }}
+              </a>
+            </nav>
+
+            <div class="mobile-menu__footer">
+              <LanguageSwitcher class="mobile-menu__languages" />
+              <AppButton href="https://portfolio.alixan.kz" variant="ghost" block>
+                {{ t('header.portfolioCta') }}
+              </AppButton>
+              <AppButton href="https://ui.alixan.kz" block>{{ t('header.uiCta') }}</AppButton>
+            </div>
           </div>
         </div>
-      </div>
-    </Transition>
+      </Transition>
+    </Teleport>
   </header>
 </template>
