@@ -1,27 +1,7 @@
-# alixan.kz
+# Links
 
-Premium landing page for the Alixan personal tech ecosystem from Kazakhstan.
+<br/>
 
-## Stack
-
-- Nuxt 4
-- Vue 3
-- TypeScript
-- SCSS
-- Static generation for GitHub Pages
-
-## Domain
-
-GitHub Pages custom domain:
-
-```txt
-alixan.kz
-```
-
-## Commands
-
-```bash
-npm install
-npm run dev
-npm run generate
-```
+<a href="https://github.com/alixan-engineer/alixan" style="padding: 16px 24px; background-color: black; color: white; border-radius: 20px; font-size: 14px; font-weight: 500; letter-spacing: 1px">
+	GITHUB
+</a>
