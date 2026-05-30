@@ -9,12 +9,11 @@ type EcosystemItem = {
 
 const { t } = useI18n()
 
-const ecosystemKeys = ['portfolio', 'ui', 'products', 'public'] as const
+const ecosystemKeys = ['portfolio', 'ui', 'products'] as const
 const hrefMap: Record<(typeof ecosystemKeys)[number], string> = {
   portfolio: 'https://portfolio.alixan.kz',
   ui: 'https://ui.alixan.kz',
   products: '#products',
-  public: '#build-public',
 }
 
 const items = computed<EcosystemItem[]>(() =>
