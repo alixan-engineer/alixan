@@ -1,8 +1,13 @@
 export default defineNuxtConfig({
 	compatibilityDate: '2025-07-15',
-	devtools: { enabled: true },
 	devServer: {
 		port: 9000,
+	},
+	devtools: {
+		enabled: true,
+		timeline: {
+			enabled: true,
+		},
 	},
 	modules: ['@nuxtjs/i18n', '@nuxtjs/sitemap'],
 	site: {
