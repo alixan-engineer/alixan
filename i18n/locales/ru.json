@@ -12,30 +12,29 @@
     "language": "Язык",
     "menu": "Открыть навигацию",
     "closeMenu": "Закрыть навигацию",
-    "portfolioCta": "Портфолио",
     "uiCta": "Alixan UI",
+    "resumeCta": "Резюме",
     "nav": {
-      "ecosystem": "Экосистема",
-      "products": "Продукты",
-      "ui": "UI System",
-      "portfolio": "Портфолио",
+      "about": "Обо мне",
+      "skills": "Навыки",
+      "experience": "Опыт",
+      "projects": "Проекты",
       "contact": "Контакты"
     }
   },
   "hero": {
-    "badge": "Персональная tech-экосистема из Казахстана",
-    "title": "Строю продукты, UI-системы и стартапы из Казахстана.",
+    "kicker": "Привет, я",
+    "nameFirst": "Алихан",
+    "nameLast": "Жумажанов",
+    "role": "Founder / Full Stack Engineer",
     "description": "Я Алихан, full-stack engineer и founder. Создаю цифровые продукты, open-source UI-инструменты и стартап-эксперименты.",
-    "primaryCta": "Посмотреть экосистему",
-    "secondaryCta": "Открыть портфолио",
+    "primaryCta": "Смотреть проекты",
+    "secondaryCta": "Связаться",
+    "stack": "Nuxt, Angular, Flutter, NestJS, MongoDB",
+    "robotPlaceholder": "Место для робота",
     "panelLabel": "Экосистема Alixan",
     "panelTitle": "Продукты, системы и эксперименты, связанные одним founder-подходом.",
-    "panelText": "Одна точка входа в продуктовую разработку, интерфейсные системы и запуск стартапов.",
-    "nodes": {
-      "products": "Продукты",
-      "ui": "UI System",
-      "portfolio": "Портфолио"
-    }
+    "panelText": "Одна точка входа в продуктовую разработку, интерфейсные системы и запуск стартапов."
   },
   "ecosystem": {
     "eyebrow": "Экосистема",
@@ -72,10 +71,68 @@
     "paragraph3": "Фокус — SaaS, маркетплейсы, UI-системы, монетизация и запуск стартапов.",
     "cta": "Читать полное резюме"
   },
+  "skills": {
+    "eyebrow": "Tech stack",
+    "title": "Навыки и экспертиза.",
+    "description": "Инструменты и системы, с которыми я превращаю идеи в полезные продукты.",
+    "items": {
+      "frontend": {
+        "title": "Frontend",
+        "description": "Сложные интерфейсы, dashboards и продуктовые сценарии.",
+        "stack": "Angular, Vue, Nuxt, React, TypeScript, RxJS"
+      },
+      "backend": {
+        "title": "Backend & infra",
+        "description": "API, данные, деплой и production ownership.",
+        "stack": "NestJS, Node.js, MongoDB, Redis, Docker, Nginx"
+      },
+      "mobile": {
+        "title": "Mobile",
+        "description": "Кроссплатформенные приложения и realtime-сценарии.",
+        "stack": "Flutter, Dart, Firebase, Push, Realtime"
+      },
+      "product": {
+        "title": "Product",
+        "description": "SaaS, маркетплейсы, монетизация и проверка гипотез.",
+        "stack": "SaaS, Marketplace, UI Systems, Analytics, Monetization"
+      }
+    }
+  },
+  "experience": {
+    "eyebrow": "Путь",
+    "title": "Опыт и запуск проектов.",
+    "description": "От enterprise-систем до founder-led продуктов, которые строятся из Казахстана.",
+    "items": [
+      {
+        "period": "Ноя 2024 - сейчас",
+        "company": "KKS Digital",
+        "role": "Senior Frontend Developer",
+        "summary": "Frontend ownership для биллинговой системы ЖКХ, которой пользуются расчетные центры.",
+        "points": ["Вел frontend-архитектуру", "Перевел сложную логику начислений в понятный UI", "Интегрировал стабильные backend-сценарии"],
+        "stack": ["Angular", "TypeScript", "RxJS"]
+      },
+      {
+        "period": "Май 2024 - Фев 2026",
+        "company": "Takta.kz",
+        "role": "Founder / Full Stack Developer",
+        "summary": "Собрал classifieds marketplace для Казахстана: mobile app, web platform, backend и realtime chat.",
+        "points": ["12k+ установок", "5k+ объявлений", "Собрано без команды и инвестиций"],
+        "stack": ["Flutter", "Nuxt", "NestJS", "MongoDB"]
+      },
+      {
+        "period": "Сен 2021 - Сен 2022",
+        "company": "Alser.kz",
+        "role": "Frontend Developer -> Head of Frontend",
+        "summary": "Вел frontend по e-commerce, admin tools и внутренней warehouse ERP.",
+        "points": ["Вырос во frontend leadership", "Координировал разработчиков", "Довел ключевой продукт до релиза за 8 месяцев"],
+        "stack": ["Angular", "E-commerce", "ERP"]
+      }
+    ]
+  },
   "products": {
-    "eyebrow": "Продукты",
-    "title": "Продукты и стартап-направления внутри экосистемы Alixan.",
-    "description": "Это не случайные сайд-проекты. Каждый из них проверяет рынок, сценарий использования или продуктовую систему, которую хочется строить всерьёз.",
+    "eyebrow": "Selected work",
+    "title": "Проекты и продукты.",
+    "description": "Короткая подборка продуктов, экспериментов и систем, которые я построил или строю сейчас.",
     "items": {
       "takta": {
         "label": "Маркетплейс",
@@ -134,11 +191,12 @@
     }
   },
   "contact": {
+    "availability": "Открыт к сильным продуктовым задачам",
     "eyebrow": "Контакт",
     "title": "Давай соберём что-то полезное.",
     "description": "Открыт к коллаборациям, продуктовым идеям, инженерным возможностям и стартап-партнёрствам.",
     "primaryCta": "Связаться",
-    "secondaryCta": "Открыть портфолио"
+    "secondaryCta": "Скачать резюме"
   },
   "footer": {
     "caption": "Продукты, интерфейсы и запуск стартапов из Казахстана.",

@@ -5,10 +5,12 @@ const props = withDefaults(
     href?: string
     variant?: 'primary' | 'ghost'
     block?: boolean
+    download?: boolean | string
   }>(),
   {
     variant: 'primary',
     block: false,
+    download: false,
   },
 )
 
@@ -31,11 +33,13 @@ const linkAttrs = computed(() => {
 
   if (props.href) {
     const isHashLink = props.href.startsWith('#') || props.href.startsWith('mailto:')
+    const isDownload = Boolean(props.download)
 
     return {
       href: props.href,
-      target: isHashLink ? undefined : '_blank',
-      rel: isHashLink ? undefined : 'noreferrer',
+      download: props.download || undefined,
+      target: isHashLink || isDownload ? undefined : '_blank',
+      rel: isHashLink || isDownload ? undefined : 'noreferrer',
     }
   }
 

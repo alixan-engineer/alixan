@@ -12,30 +12,29 @@
     "language": "Language",
     "menu": "Open navigation",
     "closeMenu": "Close navigation",
-    "portfolioCta": "Portfolio",
     "uiCta": "Alixan UI",
+    "resumeCta": "Resume",
     "nav": {
-      "ecosystem": "Ecosystem",
-      "products": "Products",
-      "ui": "UI System",
-      "portfolio": "Portfolio",
+      "about": "About",
+      "skills": "Skills",
+      "experience": "Experience",
+      "projects": "Projects",
       "contact": "Contact"
     }
   },
   "hero": {
-    "badge": "Personal tech ecosystem from Kazakhstan",
-    "title": "Building products, UI systems and startups from Kazakhstan.",
+    "kicker": "Hi there, I'm",
+    "nameFirst": "Alikhan",
+    "nameLast": "Zhumazhanov",
+    "role": "Founder / Full Stack Engineer",
     "description": "I'm Alikhan, a full-stack engineer and founder building digital products, open-source UI tools and startup experiments.",
-    "primaryCta": "Explore ecosystem",
-    "secondaryCta": "View portfolio",
+    "primaryCta": "View my work",
+    "secondaryCta": "Get in touch",
+    "stack": "Nuxt, Angular, Flutter, NestJS, MongoDB",
+    "robotPlaceholder": "Robot placeholder",
     "panelLabel": "Alixan ecosystem",
     "panelTitle": "Products, systems and experiments connected by one founder mindset.",
-    "panelText": "A single place for product building, interface systems and startup execution.",
-    "nodes": {
-      "products": "Products",
-      "ui": "UI System",
-      "portfolio": "Portfolio"
-    }
+    "panelText": "A single place for product building, interface systems and startup execution."
   },
   "ecosystem": {
     "eyebrow": "Ecosystem",
@@ -72,10 +71,68 @@
     "paragraph3": "His focus is SaaS, marketplaces, UI systems, monetization and startup execution.",
     "cta": "Read full resume"
   },
+  "skills": {
+    "eyebrow": "Tech stack",
+    "title": "Skills & expertise.",
+    "description": "The tools and systems I use to turn ideas into useful products.",
+    "items": {
+      "frontend": {
+        "title": "Frontend",
+        "description": "Complex interfaces, dashboards and product flows.",
+        "stack": "Angular, Vue, Nuxt, React, TypeScript, RxJS"
+      },
+      "backend": {
+        "title": "Backend & infra",
+        "description": "APIs, data, deployments and production ownership.",
+        "stack": "NestJS, Node.js, MongoDB, Redis, Docker, Nginx"
+      },
+      "mobile": {
+        "title": "Mobile",
+        "description": "Cross-platform apps and realtime product scenarios.",
+        "stack": "Flutter, Dart, Firebase, Push, Realtime"
+      },
+      "product": {
+        "title": "Product",
+        "description": "SaaS, marketplaces, monetization and validation.",
+        "stack": "SaaS, Marketplace, UI Systems, Analytics, Monetization"
+      }
+    }
+  },
+  "experience": {
+    "eyebrow": "Journey",
+    "title": "Experience & product launches.",
+    "description": "From enterprise systems to founder-led products built from Kazakhstan.",
+    "items": [
+      {
+        "period": "Nov 2024 - Present",
+        "company": "KKS Digital",
+        "role": "Senior Frontend Developer",
+        "summary": "Frontend ownership for a utility billing system used by calculation centers.",
+        "points": ["Owned frontend architecture", "Turned complex billing logic into clear UI", "Integrated stable backend workflows"],
+        "stack": ["Angular", "TypeScript", "RxJS"]
+      },
+      {
+        "period": "May 2024 - Feb 2026",
+        "company": "Takta.kz",
+        "role": "Founder / Full Stack Developer",
+        "summary": "Built a classifieds marketplace for Kazakhstan with mobile app, web platform, backend and realtime chat.",
+        "points": ["12k+ mobile installs", "5k+ listings", "Built without team or investment"],
+        "stack": ["Flutter", "Nuxt", "NestJS", "MongoDB"]
+      },
+      {
+        "period": "Sep 2021 - Sep 2022",
+        "company": "Alser.kz",
+        "role": "Frontend Developer -> Head of Frontend",
+        "summary": "Led frontend work across e-commerce, admin tools and internal warehouse ERP.",
+        "points": ["Grew into frontend leadership", "Coordinated developers", "Delivered a key product in 8 months"],
+        "stack": ["Angular", "E-commerce", "ERP"]
+      }
+    ]
+  },
   "products": {
-    "eyebrow": "Products",
-    "title": "Products and startup directions inside the Alixan ecosystem.",
-    "description": "These are not random side projects. Each one explores a market, a workflow or a product system worth building seriously.",
+    "eyebrow": "Selected work",
+    "title": "Projects & products.",
+    "description": "A compact collection of products, experiments and systems I have built or am building.",
     "items": {
       "takta": {
         "label": "Marketplace",
@@ -134,11 +191,12 @@
     }
   },
   "contact": {
+    "availability": "Available for thoughtful product work",
     "eyebrow": "Contact",
     "title": "Let's build something useful.",
     "description": "Open to collaborations, product ideas, engineering opportunities and startup partnerships.",
     "primaryCta": "Contact me",
-    "secondaryCta": "View portfolio"
+    "secondaryCta": "Download resume"
   },
   "footer": {
     "caption": "Products, interfaces and startup execution from Kazakhstan.",

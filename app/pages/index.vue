@@ -65,11 +65,11 @@ useHead(() => ({
   <main>
     <AppHeader />
     <HeroSection />
-    <EcosystemSection />
     <AboutSection />
+    <SkillsSection />
+    <ExperienceSection />
     <ProductsSection />
     <UiSystemSection />
-    <BuildPublicSection />
     <ContactSection />
     <AppFooter />
   </main>

@@ -31,7 +31,7 @@ const products = computed<ProductItem[]>(() =>
 </script>
 
 <template>
-  <section id="products" class="section-block">
+  <section id="projects" class="section-block">
     <div class="container">
       <SectionReveal>
         <div class="section-heading">

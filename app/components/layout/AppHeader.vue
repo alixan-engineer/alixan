@@ -5,10 +5,10 @@ const route = useRoute()
 const isMenuOpen = ref(false)
 
 const navItems = computed(() => [
-  { label: t('header.nav.ecosystem'), href: '#ecosystem' },
-  { label: t('header.nav.products'), href: '#products' },
-  { label: t('header.nav.ui'), href: '#ui-system' },
-  { label: t('header.nav.portfolio'), href: '#about' },
+  { label: t('header.nav.about'), href: '#about' },
+  { label: t('header.nav.skills'), href: '#skills' },
+  { label: t('header.nav.experience'), href: '#experience' },
+  { label: t('header.nav.projects'), href: '#projects' },
   { label: t('header.nav.contact'), href: '#contact' },
 ])
 
@@ -33,8 +33,8 @@ watch(
 
       <div class="site-header__actions">
         <LanguageSwitcher />
-        <AppButton href="https://portfolio.alixan.kz" variant="ghost">{{ t('header.portfolioCta') }}</AppButton>
-        <AppButton href="https://ui.alixan.kz">{{ t('header.uiCta') }}</AppButton>
+        <AppButton href="https://ui.alixan.kz" variant="ghost">{{ t('header.uiCta') }}</AppButton>
+        <AppButton href="/alixan-zhumazhanov-cv-hh.pdf" download>{{ t('header.resumeCta') }}</AppButton>
         <button
           class="site-header__menu"
           type="button"
@@ -75,10 +75,8 @@ watch(
 
             <div class="mobile-menu__footer">
               <LanguageSwitcher class="mobile-menu__languages" />
-              <AppButton href="https://portfolio.alixan.kz" variant="ghost" block>
-                {{ t('header.portfolioCta') }}
-              </AppButton>
-              <AppButton href="https://ui.alixan.kz" block>{{ t('header.uiCta') }}</AppButton>
+              <AppButton href="https://ui.alixan.kz" variant="ghost" block>{{ t('header.uiCta') }}</AppButton>
+              <AppButton href="/alixan-zhumazhanov-cv-hh.pdf" download block>{{ t('header.resumeCta') }}</AppButton>
             </div>
           </div>
         </div>

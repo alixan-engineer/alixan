@@ -18,7 +18,7 @@ const { t } = useI18n()
             <p>{{ t('about.paragraph3') }}</p>
           </div>
 
-          <AppButton href="https://portfolio.alixan.kz" class="about-panel__cta">
+          <AppButton href="/alixan-zhumazhanov-cv-hh.pdf" download class="about-panel__cta">
             {{ t('about.cta') }}
           </AppButton>
         </AppCard>

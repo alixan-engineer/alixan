@@ -10,6 +10,10 @@ const emailHref = 'mailto:alixan.engineer@gmail.com'
       <SectionReveal>
         <AppCard class="contact-panel">
           <div class="section-heading section-heading--compact">
+            <div class="contact-availability">
+              <span />
+              {{ t('contact.availability') }}
+            </div>
             <span class="section-heading__eyebrow">{{ t('contact.eyebrow') }}</span>
             <h2>{{ t('contact.title') }}</h2>
             <p>{{ t('contact.description') }}</p>
@@ -17,7 +21,7 @@ const emailHref = 'mailto:alixan.engineer@gmail.com'
 
           <div class="contact-panel__actions">
             <AppButton :href="emailHref">{{ t('contact.primaryCta') }}</AppButton>
-            <AppButton href="https://portfolio.alixan.kz" variant="ghost">
+            <AppButton href="/alixan-zhumazhanov-cv-hh.pdf" download variant="ghost">
               {{ t('contact.secondaryCta') }}
             </AppButton>
           </div>
