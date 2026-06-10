@@ -1,209 +1,180 @@
 {
-  "common": {
-    "brand": "Alixan",
-    "loader": "Ecosystem"
-  },
-  "seo": {
-    "title": "Alixan - Products, UI Systems and Startups from Kazakhstan",
-    "description": "Personal tech ecosystem of Alikhan: products, open-source UI system, portfolio and startup experiments from Kazakhstan.",
-    "imageAlt": "Alixan - Products, UI systems and startups from Kazakhstan"
-  },
-  "header": {
-    "language": "Language",
-    "menu": "Open navigation",
-    "closeMenu": "Close navigation",
-    "uiCta": "Alixan UI",
-    "resumeCta": "Resume",
-    "nav": {
-      "about": "About",
-      "skills": "Skills",
-      "experience": "Experience",
-      "projects": "Projects",
-      "contact": "Contact"
-    }
-  },
-  "hero": {
-    "kicker": "Hi there, I'm",
-    "nameFirst": "Alikhan",
-    "nameLast": "Zhumazhanov",
-    "role": "Founder / Full Stack Engineer",
-    "description": "I'm Alikhan, a full-stack engineer and founder building digital products, open-source UI tools and startup experiments.",
-    "primaryCta": "View my work",
-    "secondaryCta": "Get in touch",
-    "stack": "Nuxt, Angular, Flutter, NestJS, MongoDB",
-    "robotPlaceholder": "Robot placeholder",
-    "panelLabel": "Alixan ecosystem",
-    "panelTitle": "Products, systems and experiments connected by one founder mindset.",
-    "panelText": "A single place for product building, interface systems and startup execution."
-  },
-  "ecosystem": {
-    "eyebrow": "Ecosystem",
-    "title": "Three directions, one founder system.",
-    "description": "Alixan brings together product work, engineering identity and an open UI layer that can grow into a broader ecosystem.",
-    "items": {
-      "portfolio": {
-        "title": "Portfolio",
-        "description": "Resume, work experience, case studies and engineering background.",
-        "cta": "Open portfolio"
-      },
-      "ui": {
-        "title": "Alixan UI",
-        "description": "Open-source UI system for building SaaS, dashboards and product interfaces faster.",
-        "cta": "Open UI library"
-      },
-      "products": {
-        "title": "Products",
-        "description": "Startup experiments, marketplaces, tools and products built from Kazakhstan.",
-        "cta": "See products"
-      },
-      "public": {
-        "title": "Build in public",
-        "description": "Public journey of building products, UI systems and engineering content.",
-        "cta": "Follow journey"
-      }
-    }
-  },
-  "about": {
-    "eyebrow": "About",
-    "title": "A short founder profile, not a resume page.",
-    "paragraph1": "Alikhan is a full-stack developer from Almaty, Kazakhstan with a strong frontend background and a product mindset.",
-    "paragraph2": "I build web, mobile and backend systems using Nuxt, Angular, Flutter, NestJS and MongoDB.",
-    "paragraph3": "His focus is SaaS, marketplaces, UI systems, monetization and startup execution.",
-    "cta": "Read full resume"
-  },
-  "skills": {
-    "eyebrow": "Tech stack",
-    "title": "Skills & expertise.",
-    "description": "The tools and systems I use to turn ideas into useful products.",
-    "items": {
-      "frontend": {
-        "title": "Frontend",
-        "description": "Complex interfaces, dashboards and product flows.",
-        "stack": "Angular, Vue, Nuxt, React, TypeScript, RxJS"
-      },
-      "backend": {
-        "title": "Backend & infra",
-        "description": "APIs, data, deployments and production ownership.",
-        "stack": "NestJS, Node.js, MongoDB, Redis, Docker, Nginx"
-      },
-      "mobile": {
-        "title": "Mobile",
-        "description": "Cross-platform apps and realtime product scenarios.",
-        "stack": "Flutter, Dart, Firebase, Push, Realtime"
-      },
-      "product": {
-        "title": "Product",
-        "description": "SaaS, marketplaces, monetization and validation.",
-        "stack": "SaaS, Marketplace, UI Systems, Analytics, Monetization"
-      }
-    }
-  },
-  "experience": {
-    "eyebrow": "Journey",
-    "title": "Experience & product launches.",
-    "description": "From enterprise systems to founder-led products built from Kazakhstan.",
-    "items": [
-      {
-        "period": "Nov 2024 - Present",
-        "company": "KKS Digital",
-        "role": "Senior Frontend Developer",
-        "summary": "Frontend ownership for a utility billing system used by calculation centers.",
-        "points": ["Owned frontend architecture", "Turned complex billing logic into clear UI", "Integrated stable backend workflows"],
-        "stack": ["Angular", "TypeScript", "RxJS"]
-      },
-      {
-        "period": "May 2024 - Feb 2026",
-        "company": "Takta.kz",
-        "role": "Founder / Full Stack Developer",
-        "summary": "Built a classifieds marketplace for Kazakhstan with mobile app, web platform, backend and realtime chat.",
-        "points": ["12k+ mobile installs", "5k+ listings", "Built without team or investment"],
-        "stack": ["Flutter", "Nuxt", "NestJS", "MongoDB"]
-      },
-      {
-        "period": "Sep 2021 - Sep 2022",
-        "company": "Alser.kz",
-        "role": "Frontend Developer -> Head of Frontend",
-        "summary": "Led frontend work across e-commerce, admin tools and internal warehouse ERP.",
-        "points": ["Grew into frontend leadership", "Coordinated developers", "Delivered a key product in 8 months"],
-        "stack": ["Angular", "E-commerce", "ERP"]
-      }
-    ]
-  },
-  "products": {
-    "eyebrow": "Selected work",
-    "title": "Projects & products.",
-    "description": "A compact collection of products, experiments and systems I have built or am building.",
-    "items": {
-      "takta": {
-        "label": "Marketplace",
-        "title": "Takta.kz",
-        "description": "Mobile classifieds platform for Kazakhstan with mobile app, web platform, backend and realtime chat.",
-        "stack": "Flutter, Nuxt, NestJS, MongoDB"
-      },
-      "ui": {
-        "label": "Open Source",
-        "title": "Alixan UI",
-        "description": "Personal open-source UI system inspired by shadcn, built to craft SaaS and e-commerce projects faster.",
-        "stack": "Vue, Nuxt, TypeScript, SCSS"
-      },
-      "wedding": {
-        "label": "Startup Idea",
-        "title": "Wedding startup",
-        "description": "A new startup idea for organizing weddings and toys in Kazakhstan: guests, budget, invitations and vendor catalog.",
-        "stack": "Nuxt, Flutter, NestJS"
-      },
-      "freelance": {
-        "label": "Marketplace Experiment",
-        "title": "FreelancePlus",
-        "description": "A freelance marketplace experiment with online payments, profiles, bids and order management.",
-        "stack": "Angular, NestJS, MongoDB"
-      }
-    }
-  },
-  "uiSection": {
-    "eyebrow": "UI System",
-    "title": "Design system for fast product building.",
-    "description": "Alixan UI is a growing component system for building modern SaaS, dashboards, landing pages and e-commerce products with clean Vue and Nuxt components.",
-    "cta": "Open UI Library",
-    "preview": {
-      "button": "Primary Button",
-      "secondaryButton": "Ghost Button",
-      "input": "Input component preview",
-      "badgeOne": "Badge",
-      "badgeTwo": "Dashboard",
-      "modalLabel": "Modal mockup",
-      "modalTitle": "Launch flows with reusable surfaces.",
-      "dashboardLabel": "Dashboard card",
-      "dashboardValue": "Active design tokens"
-    }
-  },
-  "buildPublic": {
-    "eyebrow": "Build in public",
-    "title": "Building in public.",
-    "description": "I share the process of building startups, UI systems and products from Kazakhstan: design, code, mistakes, launches and growth.",
-    "socials": {
-      "tiktok": "TikTok",
-      "instagram": "Instagram",
-      "youtube": "YouTube",
-      "telegram": "Telegram",
-      "github": "GitHub",
-      "linkedin": "LinkedIn"
-    }
-  },
-  "contact": {
-    "availability": "Available for thoughtful product work",
-    "eyebrow": "Contact",
-    "title": "Let's build something useful.",
-    "description": "Open to collaborations, product ideas, engineering opportunities and startup partnerships.",
-    "primaryCta": "Contact me",
-    "secondaryCta": "Download resume"
-  },
-  "footer": {
-    "caption": "Products, interfaces and startup execution from Kazakhstan.",
-    "products": "Products",
-    "portfolio": "Portfolio",
-    "ui": "UI System",
-    "social": "Social links",
-    "copyright": "© 2026 Alixan. All rights reserved."
-  }
+	"common": {
+		"brand": "Alixan",
+		"loader": "Ecosystem"
+	},
+	"seo": {
+		"title": "Alixan - Products, UI Systems and Startups from Kazakhstan",
+		"description": "Personal tech ecosystem of Alikhan: products, open-source UI system, portfolio and startup experiments from Kazakhstan.",
+		"imageAlt": "Alixan - Products, UI systems and startups from Kazakhstan"
+	},
+	"header": {
+		"language": "Language",
+		"menu": "Open navigation",
+		"closeMenu": "Close navigation",
+		"uiCta": "Alixan UI",
+		"resumeCta": "Resume",
+		"nav": {
+			"about": "About",
+			"skills": "Skills",
+			"experience": "Experience",
+			"projects": "Projects",
+			"contact": "Contact"
+		}
+	},
+	"hero": {
+		"kicker": "Hi there, I'm",
+		"nameFirst": "Alikhan",
+		"nameLast": "Zhumazhanov",
+		"role": "Founder / Full Stack Engineer",
+		"description": "I'm Alikhan, a full-stack engineer and founder building digital products, open-source UI tools and startup experiments.",
+		"primaryCta": "View my work",
+		"secondaryCta": "Get in touch",
+		"robotPlaceholder": "Robot placeholder",
+		"panelLabel": "Alixan ecosystem",
+		"panelTitle": "Products, systems and experiments connected by one founder mindset.",
+		"panelText": "A single place for product building, interface systems and startup execution."
+	},
+	"about": {
+		"eyebrow": "About",
+		"title": "A short founder profile, not a resume page.",
+		"paragraph1": "Alikhan is a full-stack developer from Almaty, Kazakhstan with a strong frontend background and a product mindset.",
+		"paragraph2": "I build web, mobile and backend systems using Nuxt, Angular, Flutter, NestJS and MongoDB.",
+		"paragraph3": "His focus is SaaS, marketplaces, UI systems, monetization and startup execution.",
+		"cta": "Read full resume"
+	},
+	"skills": {
+		"eyebrow": "Tech stack",
+		"title": "Skills & expertise.",
+		"description": "The tools and systems I use to turn ideas into useful products.",
+		"items": {
+			"design": {
+				"title": "UI/UX Design",
+				"description": "Designing user interfaces from concept to production-ready products.",
+				"stack": "Figma, Adobe Photoshop, Adobe Illustrator, Prototyping, Design Systems"
+			},
+			"frontend": {
+				"title": "Frontend",
+				"description": "Complex interfaces, dashboards and product flows.",
+				"stack": "Angular, Vue, Nuxt, React, TypeScript, RxJS"
+			},
+			"backend": {
+				"title": "Backend",
+				"description": "APIs, data, deployments and production ownership.",
+				"stack": "NestJS, Node.js, MongoDB, Redis, Docker, Nginx"
+			},
+			"mobile": {
+				"title": "Mobile",
+				"description": "Cross-platform apps and realtime product scenarios.",
+				"stack": "Flutter, Dart, Firebase, Push, Realtime"
+			}
+		}
+	},
+	"experience": {
+		"eyebrow": "Journey",
+		"title": "Experience & product launches.",
+		"description": "From enterprise systems to founder-led products built from Kazakhstan.",
+		"items": [
+			{
+				"startDate": "Nov 2024",
+				"endDate": "Present",
+				"company": "KKS Digital",
+				"role": "Senior Frontend Developer",
+				"summary": "Frontend ownership for a utility billing system used by calculation centers.",
+				"points": [
+					"Owned frontend architecture",
+					"Turned complex billing logic into clear UI",
+					"Integrated stable backend workflows"
+				],
+				"stack": ["Angular", "TypeScript", "RxJS"]
+			},
+			{
+				"startDate": "March 2026",
+				"endDate": "May 2026",
+				"company": "Halyk Bank",
+				"role": "Frontend Developer",
+				"summary": "Joined two key banking products in a short period: installment payments and lending.",
+				"points": [
+					"Synchronized dev/master branches with more than 700 diverging commits",
+					"Resolved architectural issues",
+					"Restored a stable development workflow"
+				],
+				"stack": ["Angular", "TypeScript", "RxJS"]
+			},
+			{
+				"startDate": "Sep 2021",
+				"endDate": "Sep 2022",
+				"company": "Alser.kz",
+				"role": "Frontend Developer -> Head of Frontend",
+				"summary": "Led frontend work across e-commerce, admin tools and internal warehouse ERP.",
+				"points": [
+					"Grew into frontend leadership",
+					"Coordinated developers",
+					"Delivered a key product in 8 months"
+				],
+				"stack": ["Angular", "E-commerce", "ERP"]
+			}
+		]
+	},
+	"products": {
+		"eyebrow": "Selected work",
+		"title": "Projects & products.",
+		"description": "A compact collection of products, experiments and systems I have built or am building.",
+		"own": "Startups & Products",
+		"commercial": "Commercial Projects",
+		"items": {
+			"takta": {
+				"label": "Marketplace",
+				"title": "Takta.kz",
+				"description": "Mobile classifieds platform for Kazakhstan with mobile app, web platform, backend and realtime chat.",
+				"stack": "Flutter, Nuxt, NestJS, MongoDB"
+			},
+			"ui": {
+				"label": "Open Source",
+				"title": "Alixan UI",
+				"description": "Personal open-source UI system inspired by shadcn, built to craft SaaS and e-commerce projects faster.",
+				"stack": "Vue, Nuxt, TypeScript, SCSS"
+			},
+			"wedding": {
+				"label": "Startup Idea",
+				"title": "Wedding startup",
+				"description": "A new startup idea for organizing weddings and toys in Kazakhstan: guests, budget, invitations and vendor catalog.",
+				"stack": "Nuxt, Flutter, NestJS"
+			},
+			"freelance": {
+				"label": "Marketplace Experiment",
+				"title": "FreelancePlus",
+				"description": "A freelance marketplace experiment with online payments, profiles, bids and order management.",
+				"stack": "Angular, NestJS, MongoDB"
+			}
+		}
+	},
+	"buildPublic": {
+		"eyebrow": "Build in public",
+		"title": "Building in public.",
+		"description": "I share the process of building startups, UI systems and products from Kazakhstan: design, code, mistakes, launches and growth.",
+		"socials": {
+			"tiktok": "TikTok",
+			"instagram": "Instagram",
+			"youtube": "YouTube",
+			"telegram": "Telegram",
+			"github": "GitHub",
+			"linkedin": "LinkedIn"
+		}
+	},
+	"contact": {
+		"eyebrow": "Contact",
+		"title": "Let's build something useful.",
+		"description": "Open to collaborations, product ideas, engineering opportunities and startup partnerships.",
+		"primaryCta": "Contact me",
+		"secondaryCta": "Download resume"
+	},
+	"footer": {
+		"caption": "Products, interfaces and startup execution from Kazakhstan.",
+		"products": "Products",
+		"portfolio": "Portfolio",
+		"ui": "UI System",
+		"social": "Social links",
+		"copyright": "© 2026 Alixan. All rights reserved."
+	}
 }

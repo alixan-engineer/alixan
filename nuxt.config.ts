@@ -1,3 +1,6 @@
+import tailwindcss from '@tailwindcss/vite';
+import { siteConfig } from './app/config/site/site';
+
 export default defineNuxtConfig({
 	compatibilityDate: '2025-07-15',
 	devServer: {
@@ -9,117 +12,47 @@ export default defineNuxtConfig({
 			enabled: true,
 		},
 	},
-	modules: ['@nuxtjs/i18n', '@nuxtjs/sitemap'],
-	site: {
-		url: 'https://alixan.kz',
-		name: 'Alixan',
+	app: {
+		rootId: 'root',
 	},
-	components: [
-		{
-			path: '~/components',
-			pathPrefix: false,
-		},
-	],
-	css: ['~/assets/styles/main.scss'],
-	sitemap: {
-		zeroRuntime: true,
+	site: {
+		url: siteConfig.url,
+		name: siteConfig.name,
+	},
+	css: ['~/assets/css/tailwind.css'],
+	features: {
+		inlineStyles: true,
 	},
 	vite: {
-		optimizeDeps: {
-			include: ['@vue/devtools-core', '@vue/devtools-kit'],
-		},
+		plugins: [tailwindcss()],
 	},
-	app: {
-		pageTransition: {
-			name: 'page',
-			mode: 'out-in',
-		},
-		head: {
-			meta: [
-				{
-					name: 'viewport',
-					content: 'width=device-width, initial-scale=1',
-				},
-				{
-					name: 'theme-color',
-					content: '#050505',
-				},
-				{
-					name: 'color-scheme',
-					content: 'dark',
-				},
-				{
-					name: 'apple-mobile-web-app-title',
-					content: 'Alixan',
-				},
-				{
-					name: 'application-name',
-					content: 'Alixan',
-				},
-			],
-			link: [
-				{ rel: 'icon', href: '/favicon.ico', sizes: 'any' },
-				{ rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' },
-				{ rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
-				{ rel: 'manifest', href: '/site.webmanifest' },
-				{ rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-				{
-					rel: 'preconnect',
-					href: 'https://fonts.gstatic.com',
-					crossorigin: '',
-				},
-				{
-					rel: 'stylesheet',
-					href: 'https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syncopate:wght@400;700&display=swap',
-				},
-			],
-		},
-	},
-	i18n: {
-		baseUrl: 'https://alixan.kz',
-		strategy: 'prefix_except_default',
-		defaultLocale: 'en',
-		lazy: true,
-		langDir: 'locales',
-		detectBrowserLanguage: {
-			redirectOn: 'root',
-			useCookie: true,
-			alwaysRedirect: false,
-			cookieKey: 'alixan_locale',
-		},
-		locales: [
+	components: [{ path: '~/components', pathPrefix: false }],
+	modules: [
+		[
+			'@nuxtjs/i18n',
 			{
-				code: 'en',
-				name: 'EN',
-				language: 'en-US',
-				file: 'en.json',
-				dir: 'ltr',
-				isCatchallLocale: true,
-			},
-			{
-				code: 'ru',
-				name: 'RU',
-				language: 'ru-KZ',
-				file: 'ru.json',
-				dir: 'ltr',
-			},
-			{
-				code: 'kk',
-				name: 'KK',
-				language: 'kk-KZ',
-				file: 'kk.json',
-				dir: 'ltr',
+				defaultLocale: 'en',
+				strategy: 'prefix_except_default',
+				detectBrowserLanguage: false,
+				locales: [
+					{ code: 'en', name: 'English', file: 'en.json' },
+					{ code: 'ru', name: 'Русский', file: 'ru.json' },
+					{ code: 'kk', name: 'Қазақша', file: 'kk.json' },
+				],
 			},
 		],
-	},
-	routeRules: {
-		'/': { prerender: true },
-		'/ru': { prerender: true },
-		'/kk': { prerender: true },
-	},
-	nitro: {
-		prerender: {
-			concurrency: 1,
-		},
+		'@nuxtjs/sitemap',
+		['@nuxtjs/google-fonts', { families: { Geist: true } }],
+		'@nuxtjs/color-mode',
+	],
+	colorMode: {
+		preference: 'system',
+		fallback: 'light',
+		globalName: '__NUXT_COLOR_MODE__',
+		componentName: 'ColorScheme',
+		classPrefix: '',
+		classSuffix: '',
+		storage: 'cookie',
+		storageKey: 'nuxt-color-mode',
 	},
 });

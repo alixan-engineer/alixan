@@ -1,209 +1,180 @@
 {
-  "common": {
-    "brand": "Alixan",
-    "loader": "Экожүйе"
-  },
-  "seo": {
-    "title": "Alixan - Қазақстаннан шыққан өнімдер, UI жүйелері және стартаптар",
-    "description": "Алиханның жеке tech-экожүйесі: өнімдер, open-source UI system, портфолио және Қазақстаннан жасалып жатқан стартап тәжірибелері.",
-    "imageAlt": "Alixan - Қазақстаннан шыққан өнімдер, UI жүйелері және стартаптар"
-  },
-  "header": {
-    "language": "Тіл",
-    "menu": "Навигацияны ашу",
-    "closeMenu": "Навигацияны жабу",
-    "uiCta": "Alixan UI",
-    "resumeCta": "Резюме",
-    "nav": {
-      "about": "Мен туралы",
-      "skills": "Дағдылар",
-      "experience": "Тәжірибе",
-      "projects": "Жобалар",
-      "contact": "Байланыс"
-    }
-  },
-  "hero": {
-    "kicker": "Сәлем, мен",
-    "nameFirst": "Алихан",
-    "nameLast": "Жұмажанов",
-    "role": "Founder / Full Stack Engineer",
-    "description": "Мен Алиханмын, full-stack engineer және founder. Цифрлық өнімдер, open-source UI құралдары және стартап эксперименттерін жасаймын.",
-    "primaryCta": "Жобаларды көру",
-    "secondaryCta": "Байланысу",
-    "stack": "Nuxt, Angular, Flutter, NestJS, MongoDB",
-    "robotPlaceholder": "Робот орны",
-    "panelLabel": "Alixan экожүйесі",
-    "panelTitle": "Бір founder ойлау жүйесімен байланысқан өнімдер, жүйелер және эксперименттер.",
-    "panelText": "Өнім жасауға, интерфейс жүйелеріне және стартапты іске асыруға арналған бір ортақ алаң."
-  },
-  "ecosystem": {
-    "eyebrow": "Экожүйе",
-    "title": "Үш бағыт, бір инженерлік жүйе.",
-    "description": "Alixan өнім жасауды, инженерлік бағытты және кейін кеңейе алатын open-source UI қабатын бір жерге жинайды.",
-    "items": {
-      "portfolio": {
-        "title": "Портфолио",
-        "description": "Түйіндеме, жұмыс тәжірибесі, кейстер және инженерлік background.",
-        "cta": "Портфолионы ашу"
-      },
-      "ui": {
-        "title": "Alixan UI",
-        "description": "SaaS, dashboard және product interface-терді тезірек жасауға арналған open-source UI system.",
-        "cta": "UI library ашу"
-      },
-      "products": {
-        "title": "Өнімдер",
-        "description": "Қазақстаннан жасалып жатқан стартап эксперименттері, marketplace-тер, құралдар және өнімдер.",
-        "cta": "Өнімдерді көру"
-      },
-      "public": {
-        "title": "Build in public",
-        "description": "Өнімдер, UI жүйелері және инженерлік контентті ашық түрде жасау жолы.",
-        "cta": "Процесті көру"
-      }
-    }
-  },
-  "about": {
-    "eyebrow": "Қысқаша",
-    "title": "Басты бетте ұзын CV емес, қысқа таныстыру.",
-    "paragraph1": "Алихан — Алматыдан шыққан full-stack developer, frontend бағыты мықты және product mindset бар маман.",
-    "paragraph2": "Мен Nuxt, Angular, Flutter, NestJS және MongoDB арқылы web, mobile және backend жүйелерін құрамын.",
-    "paragraph3": "Негізгі бағыты — SaaS, marketplace, UI system, monetization және стартапты іске асыру.",
-    "cta": "Толық түйіндемені оқу"
-  },
-  "skills": {
-    "eyebrow": "Tech stack",
-    "title": "Дағдылар мен тәжірибе.",
-    "description": "Идеяларды пайдалы product-қа айналдыруға қолданатын құралдарым.",
-    "items": {
-      "frontend": {
-        "title": "Frontend",
-        "description": "Күрделі интерфейстер, dashboard және product flow-лар.",
-        "stack": "Angular, Vue, Nuxt, React, TypeScript, RxJS"
-      },
-      "backend": {
-        "title": "Backend & infra",
-        "description": "API, data, deployment және production ownership.",
-        "stack": "NestJS, Node.js, MongoDB, Redis, Docker, Nginx"
-      },
-      "mobile": {
-        "title": "Mobile",
-        "description": "Cross-platform app және realtime product сценарийлері.",
-        "stack": "Flutter, Dart, Firebase, Push, Realtime"
-      },
-      "product": {
-        "title": "Product",
-        "description": "SaaS, marketplace, monetization және validation.",
-        "stack": "SaaS, Marketplace, UI Systems, Analytics, Monetization"
-      }
-    }
-  },
-  "experience": {
-    "eyebrow": "Жол",
-    "title": "Тәжірибе және product launch.",
-    "description": "Enterprise жүйелерден Қазақстаннан жасалған founder-led product-тарға дейін.",
-    "items": [
-      {
-        "period": "Қар 2024 - қазір",
-        "company": "KKS Digital",
-        "role": "Senior Frontend Developer",
-        "summary": "Есептеу орталықтары қолданатын utility billing system үшін frontend ownership.",
-        "points": ["Frontend architecture жүргіздім", "Күрделі billing logic-ті түсінікті UI-ға айналдырдым", "Backend flow-ларды тұрақты интеграцияладым"],
-        "stack": ["Angular", "TypeScript", "RxJS"]
-      },
-      {
-        "period": "Мам 2024 - Ақп 2026",
-        "company": "Takta.kz",
-        "role": "Founder / Full Stack Developer",
-        "summary": "Қазақстанға арналған classifieds marketplace: mobile app, web platform, backend және realtime chat.",
-        "points": ["12k+ орнатылым", "5k+ хабарландыру", "Командасыз және инвестициясыз жасалды"],
-        "stack": ["Flutter", "Nuxt", "NestJS", "MongoDB"]
-      },
-      {
-        "period": "Қыр 2021 - Қыр 2022",
-        "company": "Alser.kz",
-        "role": "Frontend Developer -> Head of Frontend",
-        "summary": "E-commerce, admin tools және warehouse ERP бойынша frontend жүргіздім.",
-        "points": ["Frontend leadership деңгейіне өстім", "Developer-лерді координацияладым", "Негізгі product-ты 8 айда релизге жеткіздім"],
-        "stack": ["Angular", "E-commerce", "ERP"]
-      }
-    ]
-  },
-  "products": {
-    "eyebrow": "Selected work",
-    "title": "Жобалар мен өнімдер.",
-    "description": "Мен жасаған немесе қазір жасап жатқан product, experiment және system-дердің қысқа жинағы.",
-    "items": {
-      "takta": {
-        "label": "Marketplace",
-        "title": "Takta.kz",
-        "description": "Қазақстанға арналған mobile classifieds platform: мобильді қосымша, web платформа, backend және realtime chat.",
-        "stack": "Flutter, Nuxt, NestJS, MongoDB"
-      },
-      "ui": {
-        "label": "Open Source",
-        "title": "Alixan UI",
-        "description": "shadcn стилінен шабыт алған жеке open-source UI system, SaaS пен e-commerce жобаларын тезірек жасауға арналған.",
-        "stack": "Vue, Nuxt, TypeScript, SCSS"
-      },
-      "wedding": {
-        "label": "Startup Idea",
-        "title": "Wedding startup",
-        "description": "Қазақстандағы үйлену тойы мен той ұйымдастыруға арналған жаңа стартап идеясы: қонақтар, бюджет, шақыру және vendor catalog.",
-        "stack": "Nuxt, Flutter, NestJS"
-      },
-      "freelance": {
-        "label": "Marketplace Experiment",
-        "title": "FreelancePlus",
-        "description": "Онлайн төлем, профиль, bid және order management бар freelance marketplace эксперименті.",
-        "stack": "Angular, NestJS, MongoDB"
-      }
-    }
-  },
-  "uiSection": {
-    "eyebrow": "UI System",
-    "title": "Өнімді тез құруға арналған дизайн жүйесі.",
-    "description": "Alixan UI — таза Vue және Nuxt компоненттерімен modern SaaS, dashboard, landing page және e-commerce өнімдерін жасауға арналған өсіп келе жатқан компоненттік жүйе.",
-    "cta": "UI Library ашу",
-    "preview": {
-      "button": "Primary Button",
-      "secondaryButton": "Ghost Button",
-      "input": "Input компонентінің preview-ы",
-      "badgeOne": "Badge",
-      "badgeTwo": "Dashboard",
-      "modalLabel": "Modal mockup",
-      "modalTitle": "Қайта қолданылатын surface-компоненттермен жаңа flow-ларды тез іске қос.",
-      "dashboardLabel": "Dashboard card",
-      "dashboardValue": "Белсенді design tokens"
-    }
-  },
-  "buildPublic": {
-    "eyebrow": "Build in public",
-    "title": "Ашық түрде құрып жатырмын.",
-    "description": "Қазақстаннан стартап, UI жүйесі және өнім құру процесін бөлісемін: дизайн, код, қателер, релиздер және өсу.",
-    "socials": {
-      "tiktok": "TikTok",
-      "instagram": "Instagram",
-      "youtube": "YouTube",
-      "telegram": "Telegram",
-      "github": "GitHub",
-      "linkedin": "LinkedIn"
-    }
-  },
-  "contact": {
-    "availability": "Мағыналы product жобаларға ашықпын",
-    "eyebrow": "Байланыс",
-    "title": "Бір пайдалы нәрсе құрайық.",
-    "description": "Коллаборацияларға, product idea-ларға, engineering opportunity-лерге және startup partnership-ке ашықпын.",
-    "primaryCta": "Хабарласу",
-    "secondaryCta": "Резюме жүктеу"
-  },
-  "footer": {
-    "caption": "Қазақстаннан шығатын өнімдер, интерфейстер және стартап орындау.",
-    "products": "Өнімдер",
-    "portfolio": "Портфолио",
-    "ui": "UI System",
-    "social": "Әлеуметтік сілтемелер",
-    "copyright": "© 2026 Alixan. Барлық құқықтар қорғалған."
-  }
+	"common": {
+		"brand": "Alixan",
+		"loader": "Экожүйе"
+	},
+	"seo": {
+		"title": "Alixan - Қазақстаннан шыққан өнімдер, UI жүйелері және стартаптар",
+		"description": "Алиханның жеке tech-экожүйесі: өнімдер, open-source UI system, портфолио және Қазақстаннан жасалып жатқан стартап тәжірибелері.",
+		"imageAlt": "Alixan - Қазақстаннан шыққан өнімдер, UI жүйелері және стартаптар"
+	},
+	"header": {
+		"language": "Тіл",
+		"menu": "Навигацияны ашу",
+		"closeMenu": "Навигацияны жабу",
+		"uiCta": "Alixan UI",
+		"resumeCta": "Резюме",
+		"nav": {
+			"about": "Мен туралы",
+			"skills": "Дағдылар",
+			"experience": "Тәжірибе",
+			"projects": "Жобалар",
+			"contact": "Байланыс"
+		}
+	},
+	"hero": {
+		"kicker": "Сәлем, мен",
+		"nameFirst": "Алихан",
+		"nameLast": "Жұмажанов",
+		"role": "Founder / Full Stack Engineer",
+		"description": "Мен Алиханмын, full-stack engineer және founder. Цифрлық өнімдер, open-source UI құралдары және стартап эксперименттерін жасаймын.",
+		"primaryCta": "Жобаларды көру",
+		"secondaryCta": "Байланысу",
+		"robotPlaceholder": "Робот орны",
+		"panelLabel": "Alixan экожүйесі",
+		"panelTitle": "Бір founder ойлау жүйесімен байланысқан өнімдер, жүйелер және эксперименттер.",
+		"panelText": "Өнім жасауға, интерфейс жүйелеріне және стартапты іске асыруға арналған бір ортақ алаң."
+	},
+	"about": {
+		"eyebrow": "Қысқаша",
+		"title": "Басты бетте ұзын CV емес, қысқа таныстыру.",
+		"paragraph1": "Алихан — Алматыдан шыққан full-stack developer, frontend бағыты мықты және product mindset бар маман.",
+		"paragraph2": "Мен Nuxt, Angular, Flutter, NestJS және MongoDB арқылы web, mobile және backend жүйелерін құрамын.",
+		"paragraph3": "Негізгі бағыты — SaaS, marketplace, UI system, monetization және стартапты іске асыру.",
+		"cta": "Толық түйіндемені оқу"
+	},
+	"skills": {
+		"eyebrow": "Tech stack",
+		"title": "Дағдылар мен тәжірибе.",
+		"description": "Идеяларды пайдалы product-қа айналдыруға қолданатын құралдарым.",
+		"items": {
+			"design": {
+				"title": "UI/UX Design",
+				"description": "Идеядан дайын өнімге дейін пайдаланушы интерфейстерін жобалау.",
+				"stack": "Figma, Adobe Photoshop, Adobe Illustrator, Prototyping, Design Systems"
+			},
+			"frontend": {
+				"title": "Frontend",
+				"description": "Күрделі интерфейстер, dashboard және product flow-лар.",
+				"stack": "Angular, Vue, Nuxt, React, TypeScript, RxJS"
+			},
+			"backend": {
+				"title": "Backend",
+				"description": "API, data, deployment және production ownership.",
+				"stack": "NestJS, Node.js, MongoDB, Redis, Docker, Nginx"
+			},
+			"mobile": {
+				"title": "Mobile",
+				"description": "Cross-platform app және realtime product сценарийлері.",
+				"stack": "Flutter, Dart, Firebase, Push, Realtime"
+			}
+		}
+	},
+	"experience": {
+		"eyebrow": "Жол",
+		"title": "Тәжірибе және product launch.",
+		"description": "Enterprise жүйелерден Қазақстаннан жасалған founder-led product-тарға дейін.",
+		"items": [
+			{
+				"startDate": "Қар 2024",
+				"endDate": "Қазір",
+				"company": "KKS Digital",
+				"role": "Senior Frontend Developer",
+				"summary": "Есептеу орталықтары қолданатын utility billing system үшін frontend ownership.",
+				"points": [
+					"Frontend architecture жүргіздім",
+					"Күрделі billing logic-ті түсінікті UI-ға айналдырдым",
+					"Backend flow-ларды тұрақты интеграцияладым"
+				],
+				"stack": ["Angular", "TypeScript", "RxJS"]
+			},
+			{
+				"startDate": "Наурыз 2026",
+				"endDate": "Мамыр 2026",
+				"company": "Halyk Bank",
+				"role": "Frontend Developer",
+				"summary": "Қысқа уақыт ішінде банктің екі негізгі өніміне қосылдым: бөліп төлеу және несиелеу жүйелері.",
+				"points": [
+					"700-ден астам коммит айырмашылығы бар dev/master тармақтарын синхрондадым",
+					"Архитектуралық мәселелерді түзеттім",
+					"Тұрақты әзірлеу процесін қалпына келтірдім"
+				],
+				"stack": ["Angular", "TypeScript", "RxJS"]
+			},
+			{
+				"startDate": "Қыр 2021",
+				"endDate": "Қыр 2022",
+				"company": "Alser.kz",
+				"role": "Frontend Developer -> Head of Frontend",
+				"summary": "E-commerce, admin tools және warehouse ERP бойынша frontend жүргіздім.",
+				"points": [
+					"Frontend leadership деңгейіне өстім",
+					"Developer-лерді координацияладым",
+					"Негізгі product-ты 8 айда релизге жеткіздім"
+				],
+				"stack": ["Angular", "E-commerce", "ERP"]
+			}
+		]
+	},
+	"products": {
+		"eyebrow": "Selected work",
+		"title": "Жобалар мен өнімдер.",
+		"description": "Мен жасаған немесе қазір жасап жатқан product, experiment және system-дердің қысқа жинағы.",
+		"own": "Стартаптар мен өнімдер",
+		"commercial": "Коммерциялық жобалар",
+		"items": {
+			"takta": {
+				"label": "Marketplace",
+				"title": "Takta.kz",
+				"description": "Қазақстанға арналған mobile classifieds platform: мобильді қосымша, web платформа, backend және realtime chat.",
+				"stack": "Flutter, Nuxt, NestJS, MongoDB"
+			},
+			"ui": {
+				"label": "Open Source",
+				"title": "Alixan UI",
+				"description": "shadcn стилінен шабыт алған жеке open-source UI system, SaaS пен e-commerce жобаларын тезірек жасауға арналған.",
+				"stack": "Vue, Nuxt, TypeScript, SCSS"
+			},
+			"wedding": {
+				"label": "Startup Idea",
+				"title": "Wedding startup",
+				"description": "Қазақстандағы үйлену тойы мен той ұйымдастыруға арналған жаңа стартап идеясы: қонақтар, бюджет, шақыру және vendor catalog.",
+				"stack": "Nuxt, Flutter, NestJS"
+			},
+			"freelance": {
+				"label": "Marketplace Experiment",
+				"title": "FreelancePlus",
+				"description": "Онлайн төлем, профиль, bid және order management бар freelance marketplace эксперименті.",
+				"stack": "Angular, NestJS, MongoDB"
+			}
+		}
+	},
+	"buildPublic": {
+		"eyebrow": "Build in public",
+		"title": "Ашық түрде құрып жатырмын.",
+		"description": "Қазақстаннан стартап, UI жүйесі және өнім құру процесін бөлісемін: дизайн, код, қателер, релиздер және өсу.",
+		"socials": {
+			"tiktok": "TikTok",
+			"instagram": "Instagram",
+			"youtube": "YouTube",
+			"telegram": "Telegram",
+			"github": "GitHub",
+			"linkedin": "LinkedIn"
+		}
+	},
+	"contact": {
+		"eyebrow": "Байланыс",
+		"title": "Бір пайдалы нәрсе құрайық.",
+		"description": "Коллаборацияларға, product idea-ларға, engineering opportunity-лерге және startup partnership-ке ашықпын.",
+		"primaryCta": "Хабарласу",
+		"secondaryCta": "Резюме жүктеу"
+	},
+	"footer": {
+		"caption": "Қазақстаннан шығатын өнімдер, интерфейстер және стартап орындау.",
+		"products": "Өнімдер",
+		"portfolio": "Портфолио",
+		"ui": "UI System",
+		"social": "Әлеуметтік сілтемелер",
+		"copyright": "© 2026 Alixan. Барлық құқықтар қорғалған."
+	}
 }

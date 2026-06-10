@@ -1,41 +1,32 @@
 <script setup lang="ts">
-const { t } = useI18n()
-const isLoading = ref(true)
-const localeHead = useLocaleHead({
-  addDirAttribute: true,
-  identifierAttribute: 'id',
-  addSeoAttributes: true,
-})
+import { favicon } from './config/site/favicon';
 
-useHead(() => ({
-  htmlAttrs: localeHead.value.htmlAttrs,
-  link: localeHead.value.link,
-  meta: localeHead.value.meta,
-}))
+const { locale } = useI18n();
 
-onMounted(() => {
-  window.setTimeout(() => {
-    isLoading.value = false
-  }, 1100)
-})
+usePageMeta();
+
+useHead({
+	htmlAttrs: { lang: locale.value },
+	link: favicon,
+});
 </script>
 
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <div class="noise-overlay" />
-    <MouseGlow />
-    <CustomCursor />
+	<!-- Glass cursor -->
+	<NoiseOverlay />
+	<MouseGlow />
+	<CustomCursor />
 
-    <Transition name="loader-fade">
-      <div v-if="isLoading" class="app-loader" aria-hidden="true">
-        <div class="app-loader__mark">
-          <span>{{ t('common.brand') }}</span>
-          <span>{{ t('common.loader') }}</span>
-        </div>
-      </div>
-    </Transition>
+	<!-- Pages -->
+	<div class="size-full overflow-y-auto z-10">
+		<div class="max-w-container mx-auto px-4 py-6 space-y-30">
+			<NuxtPage />
+		</div>
+	</div>
 
-    <NuxtPage />
-  </div>
+	<!-- Grid wallpaper -->
+	<Wallpaper />
+
+	<!-- Host -->
+	<DrawerHost />
 </template>
