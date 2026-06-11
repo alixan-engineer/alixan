@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { Image } from '@lucide/vue';
+
 interface Product {
 	img: string;
 	title: string;
@@ -25,24 +27,20 @@ const blocks: Block[] = [
 				stack: ['Nuxt', 'Angular', 'Flutter'],
 				link: 'https://ui.alixan.kz/',
 			},
+
 			{
 				img: 'https://placehold.co/600x400',
 				title: 'Takta.kz',
-				description: 'Доска объявлений',
+				description: 'Description',
 				stack: ['Flutter', 'Nuxt', 'Nestjs', 'MongoDB'],
 				closed: true,
 			},
 			{
 				img: 'https://placehold.co/600x400',
-				title: 'Takta.kz',
-				description: 'Description',
-				stack: ['Flutter', 'Nuxt', 'Nestjs', 'MongoDB'],
-			},
-			{
-				img: 'https://placehold.co/600x400',
-				title: 'Takta.kz',
-				description: 'Description',
-				stack: ['Flutter', 'Nuxt', 'Nestjs', 'MongoDB'],
+				title: 'FreelancePlus',
+				description: 'Фриланс биржа',
+				stack: ['Angular', 'Nestjs', 'MongoDB'],
+				closed: true,
 			},
 		],
 	},
@@ -51,27 +49,21 @@ const blocks: Block[] = [
 		products: [
 			{
 				img: 'https://placehold.co/600x400',
-				title: 'Takta.kz',
-				description: 'Description',
-				stack: ['Flutter', 'Nuxt', 'Nestjs', 'MongoDB'],
+				title: 'KKS DIGITAL',
+				description: '...',
+				stack: ['Angular', 'RxJS', 'TypeScript'],
 			},
 			{
 				img: 'https://placehold.co/600x400',
-				title: 'Takta.kz',
-				description: 'Description',
-				stack: ['Flutter', 'Nuxt', 'Nestjs', 'MongoDB'],
+				title: 'Halyk bank',
+				description: '...',
+				stack: ['Angular', 'RxJS', 'TypeScript'],
 			},
 			{
 				img: 'https://placehold.co/600x400',
-				title: 'Takta.kz',
-				description: 'Description',
-				stack: ['Flutter', 'Nuxt', 'Nestjs', 'MongoDB'],
-			},
-			{
-				img: 'https://placehold.co/600x400',
-				title: 'Takta.kz',
-				description: 'Description',
-				stack: ['Flutter', 'Nuxt', 'Nestjs', 'MongoDB'],
+				title: 'Alser.kz',
+				description: '...',
+				stack: ['Angular', 'Nuxt', 'RxJS', 'TypeScript'],
 			},
 		],
 	},
@@ -102,7 +94,11 @@ const blocks: Block[] = [
 					loading="lazy"
 					class="w-full h-40 object-cover"
 				/> -->
-					<div class="w-full h-50 bg-muted rounded-4xl" />
+					<div
+						class="w-full h-50 flex items-center justify-center bg-muted text-muted-foreground rounded-4xl"
+					>
+						<Image class="size-26" />
+					</div>
 					<div class="p-4">
 						<p class="text-xl font-semibold">{{ card.title }}</p>
 						<p class="text-base mt-2 mb-6">{{ card.description }}</p>
