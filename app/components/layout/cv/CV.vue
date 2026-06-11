@@ -1,5 +1,8 @@
 <template>
-	<Card class="max-w-5xl mx-auto" id="cv">
+	<Card
+		class="max-w-5xl mx-auto max-md:-mt-67.5 fade-up [animation-delay:1400ms]"
+		id="cv"
+	>
 		<div class="space-y-10">
 			<h5 class="text-h5-uppercase">{{ $t('about.eyebrow') }}</h5>
 

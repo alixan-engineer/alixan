@@ -4,12 +4,12 @@ const stack = ['Nuxt', 'React', 'Angular', 'Flutter', 'NestJS', 'MongoDB'];
 
 <template>
 	<div
-		class="w-full md:h-[calc(80vh-24px-56px)] max-md:h-220 flex items-center justify-between relative"
+		class="w-full md:h-[calc(80vh-24px-56px)] max-md:h-220 flex items-center justify-between relative max-md:mt-34"
 		id="hero"
 	>
-		<div class="space-y-7 max-w-3xl z-10">
+		<div class="md:space-y-7 max-md:space-y-2 max-w-3xl z-10">
 			<p
-				class="text-base font-medium text-muted-foreground fade [animation-delay:600ms] max-md:text-center"
+				class="text-base font-medium md:text-muted-foreground max-md:text-white max-md:[text-shadow:-1px_-1px_0_#000,1px_-1px_0_#000,-1px_1px_0_#000,1px_1px_0_#000] fade [animation-delay:600ms] max-md:text-center"
 			>
 				{{ $t('hero.kicker') }}
 			</p>
@@ -41,7 +41,7 @@ const stack = ['Nuxt', 'React', 'Angular', 'Flutter', 'NestJS', 'MongoDB'];
 				<ContactButton />
 			</div>
 
-			<hr class="border-dashed fade [animation-delay:1200ms]" />
+			<hr class="border-dashed fade [animation-delay:1200ms] max-md:my-6" />
 
 			<div
 				class="flex items-center flex-wrap gap-4 max-md:justify-center fade-up [animation-delay:1200ms]"

@@ -1,7 +1,7 @@
 <template>
 	<Header />
 	<Hero />
-	<CV/>
+	<CV />
 	<Skills />
 	<Experience />
 	<Projects />
