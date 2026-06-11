@@ -11,6 +11,27 @@
 
 	/* Default container */
 	--container-container: 1500px;
+
+	/* Animation */
+	@keyframes fade-up {
+		from {
+			opacity: 0;
+			transform: translateY(30px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes fade {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
 }
 
 @theme inline {
@@ -245,4 +266,14 @@
 
 @utility text-h5-uppercase {
 	@apply text-md font-medium text-muted-foreground text-center uppercase;
+}
+
+@utility fade-up {
+	opacity: 0;
+	animation: fade-up 0.8s ease-out forwards;
+}
+
+@utility fade {
+	opacity: 0;
+	animation: fade 0.8s ease-out forwards;
 }

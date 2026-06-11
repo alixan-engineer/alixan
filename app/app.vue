@@ -19,7 +19,9 @@ useHead({
 
 	<!-- Pages -->
 	<div class="size-full overflow-y-auto z-10">
-		<div class="max-w-container mx-auto px-4 py-6 space-y-30">
+		<div
+			class="max-w-container mx-auto px-4 py-6 space-y-30 relative overflow-hidden"
+		>
 			<NuxtPage />
 		</div>
 	</div>
