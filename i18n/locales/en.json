@@ -122,17 +122,19 @@
 		"description": "A compact collection of products, experiments and systems I have built or am building.",
 		"own": "Startups & Products",
 		"commercial": "Commercial Projects",
+		"view": "View",
+		"closed": "Closed",
 		"items": {
 			"takta": {
 				"label": "Marketplace",
-				"title": "Takta.kz",
-				"description": "Mobile classifieds platform for Kazakhstan with mobile app, web platform, backend and realtime chat.",
+				"title": "Takta.kz - classifieds marketplace",
+				"description": "A Kazakhstan-focused classifieds and services marketplace built from scratch with mobile, web, backend, realtime chat and anti-fraud logic.",
 				"stack": "Flutter, Nuxt, NestJS, MongoDB"
 			},
 			"ui": {
 				"label": "Open Source",
-				"title": "Alixan UI",
-				"description": "Personal open-source UI system inspired by shadcn, built to craft SaaS and e-commerce projects faster.",
+				"title": "Alixan - Alixan UI",
+				"description": "A personal open-source UI system and ecosystem gateway for building SaaS, e-commerce and product interfaces faster.",
 				"stack": "Vue, Nuxt, TypeScript, SCSS"
 			},
 			"wedding": {
@@ -143,9 +145,39 @@
 			},
 			"freelance": {
 				"label": "Marketplace Experiment",
-				"title": "FreelancePlus",
-				"description": "A freelance marketplace experiment with online payments, profiles, bids and order management.",
+				"title": "FreelancePlus - freelance marketplace",
+				"description": "A freelance marketplace experiment for Kazakhstan with profiles, orders, bids, online payments and market validation.",
 				"stack": "Angular, NestJS, MongoDB"
+			},
+			"kks": {
+				"label": "Billing",
+				"title": "KKS DIGITAL - utility billing system",
+				"description": "A commercial billing product for utility calculation centers with complex accrual flows, recalculations and stable backend integration.",
+				"stack": "Angular, RxJS, TypeScript"
+			},
+			"halyk": {
+				"label": "Banking",
+				"title": "Halyk Bank - installment and lending products",
+				"description": "Frontend work on key banking products for installment payments and lending, including project stabilization and architectural fixes.",
+				"stack": "Angular, RxJS, TypeScript"
+			},
+			"alser": {
+				"label": "E-commerce",
+				"title": "Alser.kz - e-commerce, admin panel and warehouse ERP",
+				"description": "Frontend development and leadership across the main electronics store, internal admin tools and warehouse ERP workflows.",
+				"stack": "Angular, Nuxt, RxJS, TypeScript"
+			},
+			"institu": {
+				"label": "GovTech",
+				"title": "Institute of Digital Engineering and Technology - Antikor portal",
+				"description": "Frontend work on the corporate portal for the Anti-Corruption Agency of Kazakhstan, including HRM, strategy analytics, prevention and structural department modules.",
+				"stack": "Angular, TypeScript, REST API"
+			},
+			"ryware": {
+				"label": "Outsource",
+				"title": "Ryware - client product modules",
+				"description": "Frontend development for production client products, including technical debt cleanup, performance optimization and new module launches.",
+				"stack": "React, Angular, TypeScript"
 			}
 		}
 	},

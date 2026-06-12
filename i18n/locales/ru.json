@@ -117,22 +117,24 @@
 		]
 	},
 	"products": {
-		"eyebrow": "Selected work",
+		"eyebrow": "Избранные проекты",
 		"title": "Проекты и продукты.",
 		"description": "Короткая подборка продуктов, экспериментов и систем, которые я построил или строю сейчас.",
 		"own": "Стартапы и продукты",
 		"commercial": "Коммерческие проекты",
+		"view": "Посмотреть",
+		"closed": "Закрыт",
 		"items": {
 			"takta": {
 				"label": "Маркетплейс",
-				"title": "Takta.kz",
-				"description": "Мобильная classifieds-платформа для Казахстана с мобильным приложением, web-платформой, backend и realtime chat.",
+				"title": "Takta.kz - маркетплейс объявлений",
+				"description": "Платформа объявлений и услуг для Казахстана, собранная с нуля: mobile, web, backend, realtime chat и антифрод-логика.",
 				"stack": "Flutter, Nuxt, NestJS, MongoDB"
 			},
 			"ui": {
 				"label": "Open Source",
-				"title": "Alixan UI",
-				"description": "Персональная open-source UI system в духе shadcn для более быстрой сборки SaaS и e-commerce проектов.",
+				"title": "Alixan - Alixan UI",
+				"description": "Персональная open-source UI system и gateway экосистемы для более быстрой сборки SaaS, e-commerce и продуктовых интерфейсов.",
 				"stack": "Vue, Nuxt, TypeScript, SCSS"
 			},
 			"wedding": {
@@ -143,9 +145,39 @@
 			},
 			"freelance": {
 				"label": "Marketplace experiment",
-				"title": "FreelancePlus",
-				"description": "Эксперимент с freelance marketplace: онлайн-оплаты, профили, ставки и управление заказами.",
+				"title": "FreelancePlus - фриланс биржа",
+				"description": "Эксперимент с freelance marketplace для Казахстана: профили, заказы, отклики, онлайн-оплата и проверка рынка.",
 				"stack": "Angular, NestJS, MongoDB"
+			},
+			"kks": {
+				"label": "Billing",
+				"title": "KKS DIGITAL - биллинговая система ЖКХ",
+				"description": "Коммерческий billing-продукт для расчетных центров с логикой начислений, перерасчетов и стабильной backend-интеграцией.",
+				"stack": "Angular, RxJS, TypeScript"
+			},
+			"halyk": {
+				"label": "Banking",
+				"title": "Halyk Bank - рассрочка и кредитование",
+				"description": "Frontend-работа над ключевыми банковскими продуктами для рассрочки и кредитования, включая стабилизацию проекта и архитектурные исправления.",
+				"stack": "Angular, RxJS, TypeScript"
+			},
+			"alser": {
+				"label": "E-commerce",
+				"title": "Alser.kz - e-commerce, админка и warehouse ERP",
+				"description": "Frontend-разработка и leadership по основному интернет-магазину электроники, внутренним admin tools и складским ERP-сценариям.",
+				"stack": "Angular, Nuxt, RxJS, TypeScript"
+			},
+			"institu": {
+				"label": "GovTech",
+				"title": "Институт цифровой техники и технологий - портал Антикор",
+				"description": "Frontend для корпоративного портала Агентства РК по противодействию коррупции: модули HRM, стратегической аналитики, превенции и структурных подразделений.",
+				"stack": "Angular, TypeScript, REST API"
+			},
+			"ryware": {
+				"label": "Outsource",
+				"title": "Ryware - клиентские продуктовые модули",
+				"description": "Frontend-разработка production-продуктов для клиентов: закрытие технического долга, оптимизация производительности и запуск новых модулей.",
+				"stack": "React, Angular, TypeScript"
 			}
 		}
 	},

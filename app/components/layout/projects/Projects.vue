@@ -1,13 +1,8 @@
 <script setup lang="ts">
-import { Image } from '@lucide/vue';
-
 interface Product {
-	img: string;
-	title: string;
-	description: string;
+	key: string;
 	stack: string[];
 	link?: string;
-	closed?: boolean;
 }
 
 interface Block {
@@ -20,27 +15,18 @@ const blocks: Block[] = [
 		label: 'products.own',
 		products: [
 			{
-				img: 'https://placehold.co/600x400',
-				title: 'Alixan UI',
-				description:
-					'Alixan UI brings lightweight Cupertino-style components to product interfaces',
-				stack: ['Nuxt', 'Angular', 'Flutter'],
+				key: 'ui',
+				stack: ['Vue', 'Nuxt', 'TypeScript', 'SCSS'],
 				link: 'https://ui.alixan.kz/',
 			},
 
 			{
-				img: 'https://placehold.co/600x400',
-				title: 'Takta.kz',
-				description: 'Description',
-				stack: ['Flutter', 'Nuxt', 'Nestjs', 'MongoDB'],
-				closed: true,
+				key: 'takta',
+				stack: ['Flutter', 'Nuxt', 'NestJS', 'MongoDB'],
 			},
 			{
-				img: 'https://placehold.co/600x400',
-				title: 'FreelancePlus',
-				description: 'Фриланс биржа',
-				stack: ['Angular', 'Nestjs', 'MongoDB'],
-				closed: true,
+				key: 'freelance',
+				stack: ['Angular', 'NestJS', 'MongoDB'],
 			},
 		],
 	},
@@ -48,22 +34,24 @@ const blocks: Block[] = [
 		label: 'products.commercial',
 		products: [
 			{
-				img: 'https://placehold.co/600x400',
-				title: 'KKS DIGITAL',
-				description: '...',
+				key: 'kks',
 				stack: ['Angular', 'RxJS', 'TypeScript'],
 			},
 			{
-				img: 'https://placehold.co/600x400',
-				title: 'Halyk bank',
-				description: '...',
+				key: 'halyk',
 				stack: ['Angular', 'RxJS', 'TypeScript'],
 			},
 			{
-				img: 'https://placehold.co/600x400',
-				title: 'Alser.kz',
-				description: '...',
+				key: 'alser',
 				stack: ['Angular', 'Nuxt', 'RxJS', 'TypeScript'],
+			},
+			{
+				key: 'institu',
+				stack: ['Angular', 'TypeScript', 'REST API'],
+			},
+			{
+				key: 'ryware',
+				stack: ['React', 'Angular', 'TypeScript'],
 			},
 		],
 	},
@@ -85,23 +73,20 @@ const blocks: Block[] = [
 				{{ $tn(block.label) }}
 			</h2>
 			<div
-				class="grid grid-cols-[repeat(auto-fit,minmax(232px,1fr))] justify-between gap-10"
+				class="grid xl:grid-cols-4 max-xl:grid-cols-2 max-md:grid-cols-1 justify-between xl:gap-10 max-xl:gap-8 max-md:gap-7"
 			>
-				<Card v-for="card in block.products" class="p-0! overflow-hidden">
-					<!-- <img
-					:src="card.img"
-					:alt="card.title"
-					loading="lazy"
-					class="w-full h-40 object-cover"
-				/> -->
-					<div
-						class="w-full h-50 flex items-center justify-center bg-muted text-muted-foreground rounded-4xl"
-					>
-						<Image class="size-26" />
-					</div>
+				<Card
+					v-for="card in block.products"
+					:key="card.key"
+					class="p-0! overflow-hidden"
+				>
 					<div class="p-4">
-						<p class="text-xl font-semibold">{{ card.title }}</p>
-						<p class="text-base mt-2 mb-6">{{ card.description }}</p>
+						<p class="text-xl font-semibold">
+							{{ $t(`products.items.${card.key}.title`) }}
+						</p>
+						<p class="text-base mt-2 mb-6">
+							{{ $t(`products.items.${card.key}.description`) }}
+						</p>
 						<div class="inline-flex gap-2 flex-wrap">
 							<Chip v-for="item in card.stack" :key="item">
 								{{ item }}
@@ -112,8 +97,10 @@ const blocks: Block[] = [
 							:href="card.link"
 							color="secondary"
 							class="w-full mt-4"
+							target="_blank"
+							rel="noreferrer"
 						>
-							Посмотреть
+							{{ $t('products.view') }}
 						</Button>
 					</div>
 				</Card>
