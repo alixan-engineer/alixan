@@ -97,8 +97,6 @@ const blocks: Block[] = [
 							:href="card.link"
 							color="secondary"
 							class="w-full mt-4"
-							target="_blank"
-							rel="noreferrer"
 						>
 							{{ $t('products.view') }}
 						</Button>
