@@ -27,7 +27,7 @@ const stack = ['Nuxt', 'React', 'Angular', 'Flutter', 'NestJS', 'MongoDB'];
 			</p>
 
 			<p
-				class="max-w-xl max-md:text-md md:text-lg font-medium text-muted-foreground max-md:leading-6 md:leading-8 max-md:text-center fade-up [animation-delay:800ms]"
+				class="md:max-w-xl max-md:max-w-sm max-md:text-md md:text-lg font-medium text-muted-foreground max-md:leading-6 md:leading-8 max-md:text-center fade-up [animation-delay:800ms]"
 			>
 				{{ $t('hero.description') }}
 			</p>
