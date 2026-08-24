@@ -1,10 +1,5 @@
+<script setup lang="ts"></script>
+
 <template>
-	<Header />
-	<Hero />
-	<CV />
-	<Skills />
-	<Experience />
-	<Projects />
-	<Contact />
-	<Footer />
+	<div></div>
 </template>
