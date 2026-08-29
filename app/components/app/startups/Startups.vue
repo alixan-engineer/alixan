@@ -11,7 +11,7 @@ const list = computed(() => [
 		description: t('home.products.items.ui.description'),
 	},
 	{
-		link: 'https://kaspi.bot.alixan.kz/',
+		link: 'https://kaspibot.alixan.kz/',
 		img: '/img/startups/kaspi-bot.webp',
 		title: 'Kaspi Bot',
 		description: t('home.products.items.kaspi.description'),
