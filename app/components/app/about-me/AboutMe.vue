@@ -26,7 +26,7 @@ const list = computed(() => [
 </script>
 
 <template>
-	<Section class="w-full max-w-block mx-auto px-4">
+	<Section class="w-full max-w-block mx-auto">
 		<div class="space-y-1.5">
 			<SectionSubtitle>{{ $t('home.about.eyebrow') }}</SectionSubtitle>
 			<SectionTitle>{{ $t('home.about.title') }}</SectionTitle>
@@ -59,10 +59,12 @@ const list = computed(() => [
 					<p
 						v-for="(item, i) in list"
 						:key="i"
-						class="flex gap-3 md:text-base max-md:text-md"
+						class="flex md:gap-3 md:text-base max-md:text-md max-md:flex-col max-md:gap-0"
 					>
-						<b>{{ item.key }}:</b>
-						{{ item.value }}
+						<span class="max-md:text-muted-foreground md:font-bold">
+							{{ item.key }}:
+						</span>
+						<span class="max-md:font-medium">{{ item.value }}</span>
 					</p>
 				</div>
 			</div>

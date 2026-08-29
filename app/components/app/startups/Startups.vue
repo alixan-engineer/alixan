@@ -30,8 +30,6 @@ const list = computed(() => [
 			free-mode
 			slides-per-view="auto"
 			:space-between="24"
-			:slides-offset-before="16"
-			:slides-offset-after="16"
 			class="w-full h-auto cursor-grab"
 		>
 			<swiper-slide v-for="(item, i) in list" :key="i" class="w-70 h-130">

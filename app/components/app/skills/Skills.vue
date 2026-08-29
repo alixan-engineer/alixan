@@ -33,7 +33,7 @@ const list = [
 			<SectionTitle>{{ $t('home.skills.title') }}</SectionTitle>
 		</div>
 
-		<div class="grid xl:grid-cols-4 grid-cols-2 gap-6 px-4">
+		<div class="grid xl:grid-cols-4 grid-cols-2 gap-6">
 			<div
 				v-for="(item, i) in list"
 				:key="i"
