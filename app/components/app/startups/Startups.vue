@@ -12,7 +12,7 @@ const list = computed(() => [
 	},
 	{
 		link: 'https://kaspi.bot.alixan.kz/',
-		img: '/img/startups/kaspi-bot.png',
+		img: '/img/startups/kaspi-bot.webp',
 		title: 'Kaspi Bot',
 		description: t('home.products.items.kaspi.description'),
 	},

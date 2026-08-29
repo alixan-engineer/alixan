@@ -21,9 +21,11 @@ The site introduces who Alikhan is, what he builds, which products are active, a
 - 📄 Resume/CV download from `public/CV-Alikhan.pdf`
 - 🧩 Visible product navigation for Alixan UI and other projects
 - 🌍 Localized content with English, Russian and Kazakh locales
-- 🔎 Localized SEO metadata, Open Graph, Twitter card and JSON-LD
+- 🔎 Shared SEO metadata, Open Graph and Twitter card configuration
 - 🌓 Nuxt Color Mode support
 - 🎨 Premium dark visual system with calm interactions
+- 📱 Viewport-aware Select and dropdown menus that flip and constrain themselves on small screens
+- 🖼 Optimized WebP project, startup and social-preview assets
 - 🗺 Sitemap, robots.txt, favicon and PWA manifest assets
 
 ## 📦 Stack
@@ -32,7 +34,7 @@ The site introduces who Alikhan is, what he builds, which products are active, a
 - Vue 3
 - TypeScript
 - Tailwind CSS v4
-- SCSS-ready styling conventions
+- Sass for scoped component styles where needed
 - `@nuxtjs/i18n`
 - `@nuxtjs/sitemap`
 - `@nuxtjs/color-mode`
@@ -61,11 +63,13 @@ app/config/site/favicon.ts
 app/composables/usePageMeta.ts
 ```
 
-The homepage should describe `alixan.kz` as the main ecosystem site, not only as a resume page. Keep Open Graph, Twitter card, sitemap and JSON-LD aligned with the public domain:
+The homepage should describe `alixan.kz` as the main ecosystem site, not only as a resume page. Keep Open Graph, Twitter card and sitemap metadata aligned with the public domain:
 
 ```txt
 https://alixan.kz
 ```
+
+The shared Open Graph and Twitter preview is `public/og-image.webp` (1200×630). Its public URL is configured through `siteConfig.ogImage`; update both the asset and config when changing its name or format.
 
 ## 📄 CV
 
@@ -84,8 +88,7 @@ app/
   app.vue
   assets/css/tailwind.css
   components/
-    common/
-    layout/
+    app/
     ui/
   composables/
   config/site/
@@ -99,9 +102,31 @@ public/
   CV-Alikhan.pdf
   favicon.ico
   icons/
-  og-image.png
+  img/
+    projects/
+    startups/
+  og-image.webp
   robots.txt
   site.webmanifest
+```
+
+Raster images in `public/img/projects` and `public/img/startups` are stored as compact WebP files where conversion is beneficial. Keep card assets near or below 20 KB and use quality 85 as the default upper target. Small SVG assets can remain vector-based.
+
+## 🛠 Development
+
+```bash
+npm install
+npm run dev
+```
+
+The development server runs on <http://localhost:9000>.
+
+Production commands:
+
+```bash
+npm run build
+npm run generate
+npm run preview
 ```
 
 ## 🧭 Ecosystem Links

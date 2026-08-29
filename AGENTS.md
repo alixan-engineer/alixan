@@ -34,16 +34,17 @@
 
 ## Реальная структура
 
-- `app/app.vue` — глобальная оболочка, loader, SEO locale head, глобальные overlays.
-- `app/pages/index.vue` — главная страница, SEO meta и JSON-LD.
-- `app/components/layout/*` — header, footer, language switcher.
-- `app/components/sections/*` — секции главной страницы.
-- `app/components/ui/*` — локальные UI primitives: `AppButton`, `AppBadge`, `AppCard`.
-- `app/components/CustomCursor.vue`, `MouseGlow.vue`, `SectionReveal.vue` — интерактивные/визуальные helpers.
-- `app/composables/useRevealOnScroll.ts` — reveal-on-scroll logic.
-- `app/assets/styles/main.scss`, `variables.scss`, `mixins.scss` — глобальные стили.
+- `app/app.vue` — глобальная оболочка, базовые SEO meta/favicon и host-компоненты для dialog, drawer, loader и toast.
+- `app/pages/index.vue` — композиция главной страницы внутри `Scaffold`.
+- `app/components/app/*` — секции и layout главной: header, hero, about, skills, startups, projects, FAQ, CTA и footer.
+- `app/components/ui/*` — локальные UI primitives и overlay-компоненты: `Button`, `Card`, `Select`, `DropdownMenu`, dialog/drawer/toast hosts и другие.
+- `app/composables/*` — composables для overlay-состояния и общих SEO meta.
+- `app/config/site/*` — публичная конфигурация сайта, favicon и URL Open Graph image.
+- `app/assets/css/tailwind.css` — Tailwind CSS v4, дизайн-токены, light/dark themes и глобальные base styles.
 - `i18n/locales/en.json`, `ru.json`, `kk.json` — все отображаемые тексты.
-- `public/*` — favicon, manifest, OG image, CV PDF и статические файлы.
+- `public/img/projects/*`, `public/img/startups/*` — оптимизированные изображения карточек; растровые ассеты хранятся преимущественно в WebP.
+- `public/og-image.webp` — Open Graph/Twitter preview 1200×630, путь задается в `app/config/site/site.ts`.
+- `public/*` — favicon, manifest, CV PDF и остальные статические файлы.
 
 ## Стек и стиль кода
 
@@ -51,7 +52,7 @@
 - Vue SFC: `<script setup lang="ts">`.
 - Nuxt i18n: `@nuxtjs/i18n`.
 - Sitemap: `@nuxtjs/sitemap`.
-- SCSS для глобальных стилей.
+- Tailwind CSS v4 через `@tailwindcss/vite`; Sass доступен для scoped SCSS там, где он действительно нужен.
 - Auto-imported components включены из `~/components` без path prefix.
 - Dev server: `9000`.
 
@@ -59,11 +60,12 @@
 
 ## Компоненты и дизайн
 
-- Переиспользуй `AppButton`, `AppBadge`, `AppCard`, layout и section patterns вместо создания новых похожих компонентов.
+- Переиспользуй существующие `Button`, `Card`, `Select`, `DropdownMenu`, dialog/drawer и section primitives вместо создания новых похожих компонентов.
 - Если нужен новый primitive, держи API маленьким и typed.
 - Стиль должен оставаться премиальным, темным, чистым и продуктовым.
 - Избегай случайных decorative элементов, которые не улучшают восприятие.
 - Анимации должны быть спокойными и не ломать доступность.
+- Floating UI (`Select`, `DropdownMenu` и похожие popover-компоненты) должен учитывать границы viewport: менять направление раскрытия, ограничивать высоту и не создавать горизонтальный скролл на mobile.
 - Ссылки на внешние ресурсы должны открываться безопасно: `target="_blank"` и `rel="noreferrer"`, если это не download/mail/hash.
 
 Можно брать идеи и отдельные компоненты из `../alixan-ui-nuxt`, особенно кнопки, SEO, i18n-подход, Geist/font conventions и иконки. При переносе адаптируй их под текущий SCSS/Nuxt i18n проект, а не копируй registry/documentation инфраструктуру.
@@ -76,8 +78,8 @@ i18n — обязательная часть сайта.
 - Не хардкодь UI-текст в Vue template/script, если это отображаемый контент.
 - При добавлении, удалении или переименовании ключей обновляй все три локали.
 - Для внутренних маршрутов используй `useLocalePath()`.
-- Для SEO используй `t(...)` / computed значения, чтобы title/description соответствовали текущей локали.
-- Следи, чтобы `useLocaleHead()` в `app/app.vue` продолжал отдавать корректные `htmlAttrs`, `link`, `meta`.
+- Для SEO используй `usePageMeta()` и `siteConfig`; если добавляешь локализованные title/description, передавай реальные i18n-ключи и обновляй все три локали.
+- `app/app.vue` задает `htmlAttrs.lang` и favicon через `useHead()`; при изменениях сохраняй корректный `lang` для текущей локали.
 
 ## SEO и публичные данные
 
@@ -90,6 +92,8 @@ SEO должно отражать главный сайт экосистемы, 
 - Twitter card;
 - `robots`;
 - JSON-LD для `WebSite`/`Person`, если данные актуальны.
+
+Текущий preview-файл — `public/og-image.webp`, а публичный URL — `https://alixan.kz/og-image.webp`. При смене имени или формата обязательно обновляй `siteConfig.ogImage` и документацию.
 
 Если меняешь домены:
 
@@ -104,6 +108,14 @@ SEO должно отражать главный сайт экосистемы, 
 - Кнопка CV/Resume должна вести на реальный PDF из `public`.
 - Если меняешь имя файла, обнови все ссылки в header, hero/contact и локали при необходимости.
 - Для download-ссылок не ставь `target="_blank"` без причины.
+
+## Изображения
+
+- Для растровых изображений проектов/startups предпочитай WebP с качеством около 85%, если визуально нет заметной деградации.
+- Держи карточечные ассеты компактными; текущий ориентир для `public/img/projects/*` и `public/img/startups/*` — до 20 КБ на файл.
+- Не конвертируй небольшой SVG в raster без выгоды по размеру или явной причины.
+- После смены формата обновляй все ссылки в Vue/config/docs и проверяй проект через `rg` на старое расширение.
+- Для OG image сохраняй размер 1200×630; текущий WebP также оптимизирован примерно до 20 КБ.
 
 ## Команды
 

@@ -5,7 +5,7 @@ const { t } = useI18n();
 
 const list = computed(() => [
 	{
-		img: '/img/projects/kks.png',
+		img: '/img/projects/kks.webp',
 		title: t('home.projects.items.kks.title'),
 		description: t('home.projects.items.kks.description'),
 	},
@@ -15,17 +15,17 @@ const list = computed(() => [
 		description: t('home.projects.items.halyk.description'),
 	},
 	{
-		img: '/img/projects/alser.svg',
+		img: '/img/projects/alser.webp',
 		title: t('home.projects.items.alser.title'),
 		description: t('home.projects.items.alser.description'),
 	},
 	{
-		img: '/img/projects/anticor.jpg',
+		img: '/img/projects/anticor.webp',
 		title: t('home.projects.items.anticor.title'),
 		description: t('home.projects.items.anticor.description'),
 	},
 	{
-		img: '/img/projects/ryware.jpg',
+		img: '/img/projects/ryware.webp',
 		title: t('home.projects.items.ryware.title'),
 		description: t('home.projects.items.ryware.description'),
 	},
