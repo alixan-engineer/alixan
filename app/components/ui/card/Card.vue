@@ -4,16 +4,16 @@ interface CardProps {
 	imageAlt?: string;
 	title: string;
 	description?: string;
-	price?: string;
 	button?: string;
+	buttonHref?: string;
 }
 
 withDefaults(defineProps<CardProps>(), {
 	image: undefined,
 	imageAlt: '',
 	description: undefined,
-	price: undefined,
 	button: undefined,
+	buttonHref: undefined,
 });
 
 const emit = defineEmits<{
@@ -22,31 +22,38 @@ const emit = defineEmits<{
 </script>
 
 <template>
-	<Island content-class="p-0!">
+	<article class="flex flex-col border rounded-4xl">
 		<img
 			v-if="image"
 			:src="image"
 			:alt="$t(imageAlt)"
 			loading="lazy"
-			class="w-full aspect-auto object-cover"
+			class="w-full h-62 object-cover rounded-4xl border-b"
 		/>
-		<div class="space-y-4 p-4">
-			<div class="space-y-2">
-				<h3 class="text-lg font-semibold leading-6">
+		<div class="flex-1 flex flex-col justify-between gap-6 px-5 py-6">
+			<div class="space-y-4">
+				<h3 class="text-2xl font-semibold leading-6">
 					{{ $t(title) }}
 				</h3>
-				<p v-if="description" class="text-md leading-6 text-muted-foreground">
+				<p v-if="description" class="text-base text-muted-foreground">
 					{{ $t(description) }}
 				</p>
 			</div>
-			<div class="flex items-center justify-between gap-3">
-				<p v-if="price" class="text-2xl font-semibold">
-					{{ $t(price) }}
-				</p>
-				<Button v-if="button" color="primary" @click="emit('onTap')">
-					{{ $t(button) }}
-				</Button>
-			</div>
+			<Button
+				v-if="button"
+				variant="filled"
+				color="secondary"
+				class="w-full"
+				:href="buttonHref"
+				:target="buttonHref ? '_blank' : undefined"
+				rel="noreferrer"
+				@click="buttonHref ? undefined : emit('onTap')"
+			>
+				{{ $t(button) }}
+				<template #trailing>
+					<slot name="trailing" />
+				</template>
+			</Button>
 		</div>
-	</Island>
+	</article>
 </template>

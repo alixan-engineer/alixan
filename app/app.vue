@@ -14,7 +14,7 @@ useHead({
 </script>
 
 <template>
-	<NuxtLayout />
+	<NuxtPage />
 
 	<DialogHost />
 	<DrawerHost />

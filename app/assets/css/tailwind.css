@@ -11,7 +11,18 @@
 	--text-xm: 17px;
 
 	/* Default container */
-	--container-container: 1500px;
+	--container-container: 1300px;
+	--container-section: 1100px;
+	--container-block: 900px;
+
+	/* Page styles */
+	--gap-section: 28px;
+}
+
+@media (width < 48rem) {
+	:root {
+		--gap-section: 20px;
+	}
 }
 
 @theme inline {

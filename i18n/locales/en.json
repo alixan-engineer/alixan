@@ -201,6 +201,22 @@
 		"primaryCta": "Contact me",
 		"secondaryCta": "Download resume"
 	},
+	"navigation": { "section": "Navigation", "home": "Resume", "products": "My products", "projects": "Commercial projects", "blog": "Blog", "github": "GitHub" },
+	"home": { "answers": {
+		"challenge": { "question": "Hardest career challenge?", "answer": "Synchronizing banking product branches that had diverged by 700+ commits: I resolved conflicts, fixed architectural issues and restored a stable workflow." },
+		"strengths": { "question": "Your strengths?", "answer": "Systems thinking, ownership of outcomes and the ability to turn complex business logic into a clear product." },
+		"weaknesses": { "question": "Your weaknesses?", "answer": "I can go too deep on implementation quality. I am learning to set boundaries earlier and validate user value more often." }
+	} },
+	"productsPage": { "seoTitle": "Alixan products", "eyebrow": "Own products", "title": "Tools you can use.", "description": "Two active directions within the Alixan ecosystem.", "open": "Open product", "items": {
+		"ui": { "title": "Alixan UI", "description": "An open-source UI system for Nuxt and Vue: components, patterns and a foundation for fast product interfaces." },
+		"kaspi": { "title": "Kaspi bot", "description": "A focused tool for automating Kaspi workflows through a clear and practical interface." }
+	} },
+	"projectsPage": { "seoTitle": "Alixan commercial projects", "eyebrow": "Experience", "title": "Commercial projects.", "description": "Systems I worked on within product and engineering teams." },
+	"blog": { "seoTitle": "Alixan blog", "eyebrow": "Notes", "title": "A blog about product engineering.", "description": "A draft collection of topics about interfaces, architecture and building products.", "read": "Read", "back": "Back to blog", "mockLabel": "Article in progress", "posts": {
+		"design-system": { "title": "How to start a design system", "excerpt": "From the first tokens to components a team actually uses.", "body": "This is a preview of a future article. It will cover token structure, component APIs and a practical adoption process without unnecessary complexity." },
+		"frontend-architecture": { "title": "Frontend architecture without dogma", "excerpt": "Choosing module boundaries as a product and its team grow.", "body": "This is a preview of a future article. It will examine architecture through product needs, the cost of change and code clarity for the team." },
+		"build-in-public": { "title": "Building a product in public", "excerpt": "What to share, how to use feedback and keep the process authentic.", "body": "This is a preview of a future article. It will offer a practical view on public development, useful feedback and honest progress updates." }
+	} },
 	"footer": {
 		"caption": "Products, interfaces and startup execution from Kazakhstan.",
 		"products": "Products",
