@@ -213,11 +213,20 @@
 			"kks": { "title": "KKS — Unified Billing", "description": "A utility billing system for collecting meter readings and calculating service charges." }, "halyk": { "title": "Halyk Bank", "description": "Development of key banking products for installment payments and lending." }, "alser": { "title": "Alser.kz", "description": "One of Kazakhstan's largest online electronics stores." }, "anticor": { "title": "Antikor", "description": "A corporate portal for Kazakhstan's Anti-Corruption Agency." }, "ryware": { "title": "Ryware", "description": "A software development company building products for international clients." }
 		} },
 		"answers": {
-		"challenge": { "question": "Hardest career challenge?", "answer": "Synchronizing banking product branches that had diverged by 700+ commits: I resolved conflicts, fixed architectural issues and restored a stable workflow." },
-		"strengths": { "question": "Your strengths?", "answer": "Systems thinking, ownership of outcomes and the ability to turn complex business logic into a clear product." },
-		"weaknesses": { "question": "Your weaknesses?", "answer": "I can go too deep on implementation quality. I am learning to set boundaries earlier and validate user value more often." }
+		"challenge": { "question": "Hardest challenge?", "answer": "Working with Three.js. I had to build a 3D apartment viewer." },
+		"strengths": { "question": "Your strengths?", "answer": "Designing solutions. I have a good feel for interfaces." },
+		"weaknesses": { "question": "Your weaknesses?", "answer": "Complex algorithms. I have not solved many algorithmic problems." }
 		},
-		"cta": { "eyebrow": "Open to collaboration", "title": "Let's work together", "button": "Discuss a project" },
+		"cta": {
+			"eyebrow": "Open to collaboration",
+			"title": "Let's work together",
+			"button": "Discuss a project",
+			"dialog": {
+				"title": "My contacts",
+				"contactIconAlt": "Contact service icon",
+				"close": "Close"
+			}
+		},
 		"footer": { "line1": "I step in when there is an idea or chaos → and step out", "line2": "when there is a working product and a clear growth model." }
 	},
 	"productsPage": { "seoTitle": "Alixan products", "eyebrow": "Own products", "title": "Tools you can use.", "description": "Two active directions within the Alixan ecosystem.", "open": "Open product", "items": {
