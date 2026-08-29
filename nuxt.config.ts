@@ -24,6 +24,7 @@ export default defineNuxtConfig({
 		'@nuxtjs/color-mode',
 		'nuxt-svgo-loader',
 		'nuxt-lottie',
+		'nuxt-swiper',
 	],
 	site: {
 		url: siteConfig.url,

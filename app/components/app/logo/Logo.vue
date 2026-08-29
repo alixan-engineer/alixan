@@ -10,7 +10,7 @@ const localePath = useLocalePath();
 			viewBox="0 0 128 128"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
-			class="size-12"
+			class="md:size-12 max-md:size-9"
 		>
 			<rect width="128" height="128" rx="30" fill="#050505" />
 			<rect
@@ -29,6 +29,6 @@ const localePath = useLocalePath();
 			/>
 			<path d="M52 91L64 65L76 91H52Z" fill="#050505" />
 		</svg>
-		<span class="text-3xl font-semibold">Alixan</span>
+		<span class="md:text-3xl max-md:text-xl font-semibold">Alixan</span>
 	</NuxtLink>
 </template>

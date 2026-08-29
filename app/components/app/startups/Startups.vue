@@ -26,21 +26,27 @@ const list = computed(() => [
 			<SectionTitle>{{ $t('home.products.title') }}</SectionTitle>
 		</div>
 
-		<div
-			class="w-full grid grid-cols-[repeat(auto-fill,minmax(232px,320px))] gap-section"
+		<swiper-container
+			free-mode
+			slides-per-view="auto"
+			:space-between="24"
+			:slides-offset-before="16"
+			:slides-offset-after="16"
+			class="w-full h-auto cursor-grab"
 		>
-			<a v-for="(item, i) in list" :key="i" :href="item.link" target="_blank">
+			<swiper-slide v-for="(item, i) in list" :key="i" class="w-70 h-130">
 				<Card
 					:image="item.img"
 					:title="item.title"
 					:description="item.description"
 					:button="$t('home.products.open')"
+					:button-href="item.link"
 				>
 					<template #trailing>
 						<ExternalLink />
 					</template>
 				</Card>
-			</a>
-		</div>
+			</swiper-slide>
+		</swiper-container>
 	</Section>
 </template>

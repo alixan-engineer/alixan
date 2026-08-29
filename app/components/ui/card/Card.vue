@@ -22,7 +22,7 @@ const emit = defineEmits<{
 </script>
 
 <template>
-	<article class="flex flex-col border rounded-4xl">
+	<article class="size-full flex flex-col border rounded-4xl">
 		<img
 			v-if="image"
 			:src="image"

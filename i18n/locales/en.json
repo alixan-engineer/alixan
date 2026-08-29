@@ -201,21 +201,94 @@
 		"primaryCta": "Contact me",
 		"secondaryCta": "Download resume"
 	},
-	"navigation": { "section": "Navigation", "home": "Resume", "products": "My products", "projects": "Commercial projects", "blog": "Blog", "github": "GitHub" },
+	"navigation": {
+		"section": "Navigation",
+		"home": "Resume",
+		"products": "My products",
+		"projects": "Commercial projects",
+		"blog": "Blog",
+		"github": "GitHub"
+	},
 	"home": {
-		"hero": { "greeting": "Hi, I'm", "title": "Alikhan, software engineer", "description": "I launch IT products from scratch: architecture, code and infrastructure. I work where the goal is not just to build, but to deliver results.", "resume": "Full resume (PDF)" },
-		"about": { "eyebrow": "The short version", "title": "About me", "role": "Senior Full Stack Engineer", "name": "Alikhan Zhumazhanov", "details": {
-			"experience": { "label": "Experience", "value": "7+ years" }, "city": { "label": "Location", "value": "Almaty, Kazakhstan" }, "education": { "label": "Education", "value": "Higher education, Satbayev University" }, "languages": { "label": "Languages", "value": "Kazakh (native), Russian, English" }, "hobbies": { "label": "Interests", "value": "Chess, football" }
-		} },
+		"hero": {
+			"greeting": "Hi, I'm",
+			"title": "Alikhan, software engineer",
+			"description": "I launch IT products from scratch: architecture, code and infrastructure. I work where the goal is not just to build, but to deliver results.",
+			"resume": "Full resume (PDF)"
+		},
+		"about": {
+			"eyebrow": "The short version",
+			"title": "About me",
+			"role": "Senior Full Stack Engineer",
+			"name": "Alikhan Zhumazhanov",
+			"details": {
+				"experience": { "label": "Experience", "value": "7+ years" },
+				"city": { "label": "Location", "value": "Almaty, Kazakhstan" },
+				"education": {
+					"label": "Education",
+					"value": "Higher education, Satbayev University"
+				},
+				"languages": {
+					"label": "Languages",
+					"value": "Kazakh (native), Russian, English"
+				},
+				"hobbies": { "label": "Interests", "value": "Chess, football" }
+			}
+		},
 		"skills": { "eyebrow": "Tech stack", "title": "Skills" },
-		"products": { "eyebrow": "My own products", "title": "Products", "open": "View product", "items": { "ui": { "description": "A Cupertino-inspired design system with shared components and a consistent visual language for Web, Mobile and Figma." }, "kaspi": { "description": "A Kaspi sales automation service for price management and order processing." } } },
-		"projects": { "eyebrow": "Projects I've worked on", "title": "Commercial projects", "role": "My role", "items": {
-			"kks": { "title": "KKS — Unified Billing", "description": "A utility billing system for collecting meter readings and calculating service charges." }, "halyk": { "title": "Halyk Bank", "description": "Development of key banking products for installment payments and lending." }, "alser": { "title": "Alser.kz", "description": "One of Kazakhstan's largest online electronics stores." }, "anticor": { "title": "Antikor", "description": "A corporate portal for Kazakhstan's Anti-Corruption Agency." }, "ryware": { "title": "Ryware", "description": "A software development company building products for international clients." }
-		} },
+		"products": {
+			"eyebrow": "My own products",
+			"title": "Products",
+			"open": "View product",
+			"items": {
+				"ui": {
+					"description": "A Cupertino-inspired design system with shared components and a consistent visual language for Web, Mobile and Figma."
+				},
+				"kaspi": {
+					"description": "A Kaspi sales automation service for price management and order processing."
+				}
+			}
+		},
+		"projects": {
+			"eyebrow": "Projects I've worked on",
+			"title": "Commercial projects",
+			"role": "My role",
+			"items": {
+				"kks": {
+					"title": "KKS",
+					"description": "A utility billing system for collecting meter readings and calculating service charges."
+				},
+				"halyk": {
+					"title": "Halyk Bank",
+					"description": "Development of key banking products for installment payments and lending."
+				},
+				"alser": {
+					"title": "Alser.kz",
+					"description": "One of Kazakhstan's largest online electronics stores."
+				},
+				"anticor": {
+					"title": "Antikor",
+					"description": "A corporate portal for Kazakhstan's Anti-Corruption Agency."
+				},
+				"ryware": {
+					"title": "Ryware",
+					"description": "A software development company building products for international clients."
+				}
+			}
+		},
 		"answers": {
-		"challenge": { "question": "Hardest challenge?", "answer": "Working with Three.js. I had to build a 3D apartment viewer." },
-		"strengths": { "question": "Your strengths?", "answer": "Designing solutions. I have a good feel for interfaces." },
-		"weaknesses": { "question": "Your weaknesses?", "answer": "Complex algorithms. I have not solved many algorithmic problems." }
+			"challenge": {
+				"question": "Hardest challenge?",
+				"answer": "Working with Three.js. I had to build a 3D apartment viewer."
+			},
+			"strengths": {
+				"question": "Your strengths?",
+				"answer": "Designing solutions. I have a good feel for interfaces."
+			},
+			"weaknesses": {
+				"question": "Your weaknesses?",
+				"answer": "Complex algorithms. I have not solved many algorithmic problems."
+			}
 		},
 		"cta": {
 			"eyebrow": "Open to collaboration",
@@ -227,18 +300,60 @@
 				"close": "Close"
 			}
 		},
-		"footer": { "line1": "I step in when there is an idea or chaos → and step out", "line2": "when there is a working product and a clear growth model." }
+		"footer": {
+			"line1": "I step in when there is an idea or chaos → and step out",
+			"line2": "when there is a working product and a clear growth model."
+		}
 	},
-	"productsPage": { "seoTitle": "Alixan products", "eyebrow": "Own products", "title": "Tools you can use.", "description": "Two active directions within the Alixan ecosystem.", "open": "Open product", "items": {
-		"ui": { "title": "Alixan UI", "description": "An open-source UI system for Nuxt and Vue: components, patterns and a foundation for fast product interfaces." },
-		"kaspi": { "title": "Kaspi bot", "description": "A focused tool for automating Kaspi workflows through a clear and practical interface." }
-	} },
-	"projectsPage": { "seoTitle": "Alixan commercial projects", "eyebrow": "Experience", "title": "Commercial projects.", "description": "Systems I worked on within product and engineering teams." },
-	"blog": { "seoTitle": "Alixan blog", "eyebrow": "Notes", "title": "A blog about product engineering.", "description": "A draft collection of topics about interfaces, architecture and building products.", "read": "Read", "back": "Back to blog", "mockLabel": "Article in progress", "posts": {
-		"design-system": { "title": "How to start a design system", "excerpt": "From the first tokens to components a team actually uses.", "body": "This is a preview of a future article. It will cover token structure, component APIs and a practical adoption process without unnecessary complexity." },
-		"frontend-architecture": { "title": "Frontend architecture without dogma", "excerpt": "Choosing module boundaries as a product and its team grow.", "body": "This is a preview of a future article. It will examine architecture through product needs, the cost of change and code clarity for the team." },
-		"build-in-public": { "title": "Building a product in public", "excerpt": "What to share, how to use feedback and keep the process authentic.", "body": "This is a preview of a future article. It will offer a practical view on public development, useful feedback and honest progress updates." }
-	} },
+	"productsPage": {
+		"seoTitle": "Alixan products",
+		"eyebrow": "Own products",
+		"title": "Tools you can use.",
+		"description": "Two active directions within the Alixan ecosystem.",
+		"open": "Open product",
+		"items": {
+			"ui": {
+				"title": "Alixan UI",
+				"description": "An open-source UI system for Nuxt and Vue: components, patterns and a foundation for fast product interfaces."
+			},
+			"kaspi": {
+				"title": "Kaspi bot",
+				"description": "A focused tool for automating Kaspi workflows through a clear and practical interface."
+			}
+		}
+	},
+	"projectsPage": {
+		"seoTitle": "Alixan commercial projects",
+		"eyebrow": "Experience",
+		"title": "Commercial projects.",
+		"description": "Systems I worked on within product and engineering teams."
+	},
+	"blog": {
+		"seoTitle": "Alixan blog",
+		"eyebrow": "Notes",
+		"title": "A blog about product engineering.",
+		"description": "A draft collection of topics about interfaces, architecture and building products.",
+		"read": "Read",
+		"back": "Back to blog",
+		"mockLabel": "Article in progress",
+		"posts": {
+			"design-system": {
+				"title": "How to start a design system",
+				"excerpt": "From the first tokens to components a team actually uses.",
+				"body": "This is a preview of a future article. It will cover token structure, component APIs and a practical adoption process without unnecessary complexity."
+			},
+			"frontend-architecture": {
+				"title": "Frontend architecture without dogma",
+				"excerpt": "Choosing module boundaries as a product and its team grow.",
+				"body": "This is a preview of a future article. It will examine architecture through product needs, the cost of change and code clarity for the team."
+			},
+			"build-in-public": {
+				"title": "Building a product in public",
+				"excerpt": "What to share, how to use feedback and keep the process authentic.",
+				"body": "This is a preview of a future article. It will offer a practical view on public development, useful feedback and honest progress updates."
+			}
+		}
+	},
 	"footer": {
 		"caption": "Products, interfaces and startup execution from Kazakhstan.",
 		"products": "Products",
