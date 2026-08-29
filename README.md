@@ -110,7 +110,7 @@ public/
   site.webmanifest
 ```
 
-Raster images in `public/img/projects` and `public/img/startups` are stored as compact WebP files where conversion is beneficial. Keep card assets near or below 20 KB and use quality 85 as the default upper target. Small SVG assets can remain vector-based.
+Raster images are stored as compact WebP files where conversion is beneficial. Keep project/startup cards near or below 20 KB and hero artwork below 30 KB; use quality 85 as the default upper target. Current hero artwork is 900×400 for desktop and 480×600 for mobile. Small SVG assets can remain vector-based.
 
 ## 🛠 Development
 
