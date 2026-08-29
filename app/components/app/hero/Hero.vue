@@ -12,10 +12,10 @@ const list = ['React', 'Vue', 'Angular', 'Flutter', 'NestJS', 'MongoDB'];
 		>
 			<source
 				media="(min-width: 768px)"
-				srcset="/img/hero/hero-art-desktop.webp"
+				srcset="/img/hero/hero-art-desktop-v2.webp"
 			/>
 			<img
-				src="/img/hero/hero-art-mobile.webp"
+				src="/img/hero/hero-art-mobile-v2.webp"
 				alt=""
 				width="1122"
 				height="1402"
@@ -32,16 +32,17 @@ const list = ['React', 'Vue', 'Angular', 'Flutter', 'NestJS', 'MongoDB'];
 				class="max-md:px-3 max-md:py-1 md:px-5 md:py-2.5 flex items-center max-md:gap-1.5 md:gap-2.5 bg-accent text-accent-foreground border rounded-3xl"
 			>
 				<Sparkles class="max-md:size-4" />
-				<span class="max-md:text-sm md:text-base font-medium">{{
-					$t('home.hero.greeting')
-				}}</span>
+				<span class="max-md:text-sm md:text-base font-medium">
+					{{ $t('home.hero.greeting') }}
+				</span>
 			</div>
 
-			<SectionTitle>{{ $t('home.hero.title') }}</SectionTitle>
-
-			<SectionSubtitle class="text-foreground/80! leading-7">
-				{{ $t('home.hero.description') }}
-			</SectionSubtitle>
+			<div class="space-y-3">
+				<SectionTitle>{{ $t('home.hero.title') }}</SectionTitle>
+				<SectionSubtitle class="text-foreground/80! leading-7">
+					{{ $t('home.hero.description') }}
+				</SectionSubtitle>
+			</div>
 
 			<div
 				class="w-full px-4 flex items-center justify-center gap-4 max-md:flex-col"
@@ -79,7 +80,7 @@ const list = ['React', 'Vue', 'Angular', 'Flutter', 'NestJS', 'MongoDB'];
 
 <style scoped lang="scss">
 .hero-art {
-	opacity: 0.72;
+	opacity: 0.82;
 	-webkit-mask-image: radial-gradient(
 		ellipse 88% 82% at center,
 		transparent 42%,
@@ -94,7 +95,7 @@ const list = ['React', 'Vue', 'Angular', 'Flutter', 'NestJS', 'MongoDB'];
 
 @media (max-width: 767px) {
 	.hero-art {
-		opacity: 0.48;
+		opacity: 0.58;
 		-webkit-mask-image: radial-gradient(
 			ellipse 92% 72% at center,
 			transparent 38%,

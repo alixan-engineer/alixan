@@ -24,7 +24,7 @@ const items = computed(() => [
 </script>
 
 <template>
-	<Section>
+	<Section class="max-w-block mx-auto">
 		<SectionTitle>FAQ</SectionTitle>
 		<Accordion v-model="activeItem" :items="items" />
 	</Section>

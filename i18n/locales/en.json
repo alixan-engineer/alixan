@@ -25,7 +25,23 @@
 				"hobbies": { "label": "Interests", "value": "Chess, football" }
 			}
 		},
-		"skills": { "eyebrow": "Tech stack", "title": "Skills" },
+		"skills": {
+			"eyebrow": "Tech stack",
+			"title": "Skills",
+			"categories": {
+				"design": { "title": "UI/UX Design" },
+				"frontend": { "title": "Frontend" },
+				"backend": { "title": "Backend" },
+				"mobile": { "title": "Mobile" }
+			},
+			"items": {
+				"figma": "Figma", "photoshop": "Adobe Photoshop", "illustrator": "Adobe Illustrator", "cupertino": "Cupertino Design",
+				"material": "Material Design", "atomic": "Atomic Design", "react": "React", "vue": "Vue", "angular": "Angular",
+				"rxjs": "RxJS", "node": "Node.js", "nest": "NestJS", "mongodb": "MongoDB", "redis": "Redis",
+				"docker": "Docker", "nginx": "Nginx", "flutter": "Flutter", "firebase": "Firebase", "xcode": "Xcode",
+				"android": "Android Studio"
+			}
+		},
 		"products": {
 			"eyebrow": "My own products",
 			"title": "Products",
