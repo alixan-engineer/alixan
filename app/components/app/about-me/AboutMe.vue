@@ -1,33 +1,35 @@
 <script setup lang="ts">
-const list = [
+const { t } = useI18n();
+
+const list = computed(() => [
 	{
-		key: 'Опыт',
-		value: '+7 лет',
+		key: t('home.about.details.experience.label'),
+		value: t('home.about.details.experience.value'),
 	},
 	{
-		key: 'Город',
-		value: 'Казахстан, Алматы',
+		key: t('home.about.details.city.label'),
+		value: t('home.about.details.city.value'),
 	},
 	{
-		key: 'Образование',
-		value: 'Высшее & Satbayev University',
+		key: t('home.about.details.education.label'),
+		value: t('home.about.details.education.value'),
 	},
 	{
-		key: 'Языки',
-		value: 'Казахский (родной), Русский, Английский',
+		key: t('home.about.details.languages.label'),
+		value: t('home.about.details.languages.value'),
 	},
 	{
-		key: 'Хобби',
-		value: 'Шахматы, Футбол',
+		key: t('home.about.details.hobbies.label'),
+		value: t('home.about.details.hobbies.value'),
 	},
-] as const;
+]);
 </script>
 
 <template>
 	<Section class="w-full max-w-block mx-auto">
 		<div class="space-y-1.5">
-			<SectionSubtitle>Без длинного CV</SectionSubtitle>
-			<SectionTitle>Коротко обо мне</SectionTitle>
+			<SectionSubtitle>{{ $t('home.about.eyebrow') }}</SectionSubtitle>
+			<SectionTitle>{{ $t('home.about.title') }}</SectionTitle>
 		</div>
 
 		<div class="w-full h-auto p-6 flex gap-8 bg-card border rounded-4xl">
@@ -43,9 +45,9 @@ const list = [
 			<div class="flex-1 space-y-3.5">
 				<div class="space-y-1.5">
 					<h2 class="text-xl font-medium text-muted-foreground">
-						Senior Full Stack разработчик
+						{{ $t('home.about.role') }}
 					</h2>
-					<h1 class="text-3xl font-bold">Жумажанов Алихан</h1>
+					<h1 class="text-3xl font-bold">{{ $t('home.about.name') }}</h1>
 				</div>
 				<div class="space-y-2">
 					<p v-for="(item, i) in list" :key="i" class="flex gap-3 text-base">

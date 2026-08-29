@@ -7,6 +7,6 @@ import { Zap } from '@lucide/vue';
 		<template #leading>
 			<Zap />
 		</template>
-		Обсудить проект
+		{{ $t('home.cta.button') }}
 	</Button>
 </template>

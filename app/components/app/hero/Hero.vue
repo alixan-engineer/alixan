@@ -28,14 +28,13 @@ const list = ['React', 'Vue', 'Angular', 'Flutter', 'NestJS', 'MongoDB'];
 				class="max-md:px-3 max-md:py-1 md:px-5 md:py-2.5 flex items-center max-md:gap-1.5 md:gap-2.5 bg-accent text-accent-foreground border rounded-3xl"
 			>
 				<Sparkles class="max-md:size-4" />
-				<span class="max-md:text-sm md:text-base font-medium">Привет, я</span>
+				<span class="max-md:text-sm md:text-base font-medium">{{ $t('home.hero.greeting') }}</span>
 			</div>
 
-			<SectionTitle>Алихан, разработчик </SectionTitle>
+			<SectionTitle>{{ $t('home.hero.title') }}</SectionTitle>
 
 			<SectionSubtitle class="text-foreground/80!">
-				Запускаю IT продукты с нуля: архитектура, код, инфраструктура. Работаю
-				там, где нужно не просто “сделать”, а довести до результата.
+				{{ $t('home.hero.description') }}
 			</SectionSubtitle>
 
 			<div class="flex items-center gap-4">
@@ -48,7 +47,7 @@ const list = ['React', 'Vue', 'Angular', 'Flutter', 'NestJS', 'MongoDB'];
 					href="/CV-Alikhan.pdf"
 					target="_blank"
 				>
-					Полное резюме (PDF)
+					{{ $t('home.hero.resume') }}
 					<template #trailing>
 						<ExternalLink />
 					</template>

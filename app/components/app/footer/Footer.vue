@@ -7,8 +7,8 @@
 				<div class="space-y-3">
 					<Logo />
 					<p class="text-base font-light text-muted-foreground">
-						Прихожу, когда есть идея или хаос → ухожу,<br />
-						когда есть работающий продукт и понятная модель роста.
+						{{ $t('home.footer.line1') }}<br />
+						{{ $t('home.footer.line2') }}
 					</p>
 				</div>
 				<div class="flex-1" />

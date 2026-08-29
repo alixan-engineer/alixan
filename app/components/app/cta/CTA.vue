@@ -3,8 +3,8 @@
 		<div
 			class="w-full max-w-block mx-auto flex flex-col items-center justify-center bg-card border rounded-4xl py-14"
 		>
-			<SectionSubtitle>Готов к сотрудничеству</SectionSubtitle>
-			<SectionTitle class="mt-4 mb-8">Поработаем вместе</SectionTitle>
+			<SectionSubtitle>{{ $t('home.cta.eyebrow') }}</SectionSubtitle>
+			<SectionTitle class="mt-4 mb-8">{{ $t('home.cta.title') }}</SectionTitle>
 			<CTAButton />
 		</div>
 	</Section>

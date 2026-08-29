@@ -2,26 +2,25 @@
 import Accordion from '@/components/ui/accordion/Accordion.vue';
 
 const activeItem = ref('item-1');
+const { t } = useI18n();
 
-const items = [
+const items = computed(() => [
 	{
 		value: '1',
-		title: 'Самое сложное что Вы делали в карьере?',
-		content:
-			'Работа с Three.js. Надо было сделать 3D просмотр квартиры прямо на сайте.',
+		title: t('home.answers.challenge.question'),
+		content: t('home.answers.challenge.answer'),
 	},
 	{
 		value: '2',
-		title: 'Ваши слабые стороны?',
-		content: 'Сложные алгоритмы. Мало решал алгоритмические задачи.',
+		title: t('home.answers.weaknesses.question'),
+		content: t('home.answers.weaknesses.answer'),
 	},
 	{
 		value: '3',
-		title: 'Ваши сильные стороны?',
-		content:
-			'Хорошо чувствую интерфейсы. Люблю делать их простыми, быстрыми и удобными.',
+		title: t('home.answers.strengths.question'),
+		content: t('home.answers.strengths.answer'),
 	},
-];
+]);
 </script>
 
 <template>

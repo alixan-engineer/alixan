@@ -29,8 +29,8 @@ const list = [
 <template>
 	<Section>
 		<div class="space-y-1.5">
-			<SectionSubtitle>Tech stack</SectionSubtitle>
-			<SectionTitle>Навыки</SectionTitle>
+			<SectionSubtitle>{{ $t('home.skills.eyebrow') }}</SectionSubtitle>
+			<SectionTitle>{{ $t('home.skills.title') }}</SectionTitle>
 		</div>
 
 		<div class="grid grid-cols-4 gap-6">

@@ -1,45 +1,42 @@
 <script setup lang="ts">
 import { ArrowRight } from '@lucide/vue';
 
-const list = [
+const { t } = useI18n();
+
+const list = computed(() => [
 	{
 		img: '/img/projects/kks.png',
-		title: 'ККС - Единый Биллинг',
-		description:
-			'Биллинговая система для сферы ЖКХ. Сбор показаний и расчёт начислений за коммунальные услуги.',
+		title: t('home.projects.items.kks.title'),
+		description: t('home.projects.items.kks.description'),
 	},
 	{
 		img: '/img/projects/halyk.svg',
-		title: 'Halyk bank',
-		description:
-			'Корпоративный портал для Агентства РК по противодействию коррупции.',
+		title: t('home.projects.items.halyk.title'),
+		description: t('home.projects.items.halyk.description'),
 	},
 	{
 		img: '/img/projects/alser.svg',
-		title: 'Alser.kz',
-		description:
-			'Один из крупнейших интернет-магазинов электроники в Казахстане.',
+		title: t('home.projects.items.alser.title'),
+		description: t('home.projects.items.alser.description'),
 	},
 	{
 		img: '/img/projects/anticor.jpg',
-		title: 'Антикор',
-		description:
-			'Корпоративный портал для Агентства РК по противодействию коррупции.',
+		title: t('home.projects.items.anticor.title'),
+		description: t('home.projects.items.anticor.description'),
 	},
 	{
 		img: '/img/projects/ryware.jpg',
-		title: 'Ryware',
-		description:
-			'Компания по разработке программных продуктов для международных клиентов.',
+		title: t('home.projects.items.ryware.title'),
+		description: t('home.projects.items.ryware.description'),
 	},
-] as const;
+]);
 </script>
 
 <template>
 	<Section>
 		<div class="space-y-1.5">
-			<SectionSubtitle>Проекты над которыми я работал</SectionSubtitle>
-			<SectionTitle>Коммерческие проекты</SectionTitle>
+			<SectionSubtitle>{{ $t('home.projects.eyebrow') }}</SectionSubtitle>
+			<SectionTitle>{{ $t('home.projects.title') }}</SectionTitle>
 		</div>
 
 		<div
@@ -51,7 +48,7 @@ const list = [
 				:image="item.img"
 				:title="item.title"
 				:description="item.description"
-				button="Моя роль"
+				:button="$t('home.projects.role')"
 			>
 				<template #trailing>
 					<ArrowRight />

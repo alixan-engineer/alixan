@@ -1,29 +1,29 @@
 <script setup lang="ts">
 import { ExternalLink } from '@lucide/vue';
 
-const list = [
+const { t } = useI18n();
+
+const list = computed(() => [
 	{
 		link: 'https://ui.alixan.kz/',
 		img: '/img/startups/alixan-ui.svg',
 		title: 'Alixan UI',
-		description:
-			'Дизайн-система в стиле Cupertino. Единые компоненты и визуальный язык для Web, Mobile и Figma.',
+		description: t('home.products.items.ui.description'),
 	},
 	{
 		link: 'https://kaspi.bot.alixan.kz/',
 		img: '/img/startups/kaspi-bot.png',
 		title: 'Kaspi Bot',
-		description:
-			'Сервис автоматизации продаж на Kaspi. Демпинг цен и управление заказами.',
+		description: t('home.products.items.kaspi.description'),
 	},
-] as const;
+]);
 </script>
 
 <template>
 	<Section>
 		<div class="space-y-1.5">
-			<SectionSubtitle>Мои собственные продукты</SectionSubtitle>
-			<SectionTitle>Продукты</SectionTitle>
+			<SectionSubtitle>{{ $t('home.products.eyebrow') }}</SectionSubtitle>
+			<SectionTitle>{{ $t('home.products.title') }}</SectionTitle>
 		</div>
 
 		<div
@@ -34,7 +34,7 @@ const list = [
 					:image="item.img"
 					:title="item.title"
 					:description="item.description"
-					button="Посмотреть продукт"
+					:button="$t('home.products.open')"
 				>
 					<template #trailing>
 						<ExternalLink />
