@@ -5,9 +5,18 @@ const list = ['React', 'Vue', 'Angular', 'Flutter', 'NestJS', 'MongoDB'];
 </script>
 
 <template>
-	<div class="relative isolate h-170 overflow-hidden">
-		<div class="hero-space absolute inset-0 -z-10" aria-hidden="true">
-			<div class="hero-orb" />
+	<div class="hero relative isolate h-170 overflow-hidden">
+		<div
+			class="hero-space hero-space--dark absolute inset-0 -z-10"
+			aria-hidden="true"
+		>
+			<div class="hero-orb hero-orb--dark" />
+		</div>
+		<div
+			class="hero-space hero-space--light absolute inset-0 -z-10"
+			aria-hidden="true"
+		>
+			<div class="hero-orb hero-orb--light" />
 		</div>
 
 		<div
@@ -64,7 +73,28 @@ const list = ['React', 'Vue', 'Angular', 'Flutter', 'NestJS', 'MongoDB'];
 </template>
 
 <style scoped lang="scss">
+.hero::after {
+	position: absolute;
+	z-index: 1;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 8rem;
+	pointer-events: none;
+	content: '';
+	background: linear-gradient(180deg, transparent, var(--background));
+}
+
 .hero-space {
+	transition: opacity 240ms ease;
+}
+
+.hero-space--light {
+	background: linear-gradient(180deg, #f7fcff 0%, #eaf7ff 58%, #f8fcff 100%);
+}
+
+.hero-space--dark {
+	display: none;
 	background:
 		radial-gradient(
 			circle at 8% 22%,
@@ -107,10 +137,36 @@ const list = ['React', 'Vue', 'Angular', 'Flutter', 'NestJS', 'MongoDB'];
 		auto;
 }
 
+:global(.dark .hero-space--light) {
+	display: none;
+}
+
+:global(.dark .hero-space--dark) {
+	display: block;
+}
+
 .hero-space::after {
 	position: absolute;
 	inset: 0;
 	content: '';
+}
+
+.hero-space--light::after {
+	background:
+		radial-gradient(
+			ellipse 55% 30% at 50% 67%,
+			rgb(0 158 241 / 0.12),
+			transparent 78%
+		),
+		linear-gradient(
+			90deg,
+			rgb(255 255 255 / 0.78) 0%,
+			transparent 22% 78%,
+			rgb(255 255 255 / 0.78) 100%
+		);
+}
+
+.hero-space--dark::after {
 	background:
 		radial-gradient(
 			ellipse 55% 30% at 50% 67%,
@@ -133,6 +189,30 @@ const list = ['React', 'Vue', 'Angular', 'Flutter', 'NestJS', 'MongoDB'];
 	aspect-ratio: 1.55;
 	transform: translateX(-50%);
 	border-radius: 50%;
+}
+
+.hero-orb--light {
+	background:
+		radial-gradient(
+			ellipse 66% 54% at 50% 88%,
+			rgb(87 190 238 / 0.28),
+			transparent 64%
+		),
+		radial-gradient(
+			ellipse at 50% 104%,
+			#caefff 0%,
+			#dff5ff 35%,
+			#edf9ff 63%,
+			#f8fcff 88%
+		);
+	box-shadow:
+		0 8px 5px -4px rgb(62 193 235 / 0.52),
+		0 16px 18px -8px rgb(0 170 230 / 0.32),
+		0 32px 56px -17px rgb(0 142 255 / 0.24),
+		0 62px 120px -38px rgb(0 151 255 / 0.18);
+}
+
+.hero-orb--dark {
 	background:
 		radial-gradient(
 			ellipse 66% 54% at 50% 88%,
@@ -154,10 +234,10 @@ const list = ['React', 'Vue', 'Angular', 'Flutter', 'NestJS', 'MongoDB'];
 }
 
 .hero-greeting {
-	color: rgb(232 248 255 / 0.94);
-	background: rgb(5 25 39 / 0.64);
-	border-color: rgb(128 220 255 / 0.24);
-	box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.05);
+	color: #16425b;
+	background: rgb(255 255 255 / 0.68);
+	border-color: rgb(20 145 199 / 0.2);
+	box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.7);
 	-webkit-backdrop-filter: blur(12px);
 	backdrop-filter: blur(12px);
 }
@@ -174,14 +254,33 @@ const list = ['React', 'Vue', 'Angular', 'Flutter', 'NestJS', 'MongoDB'];
 }
 
 :deep(.hero-secondary) {
-	color: rgb(231 248 255 / 0.94);
-	background: rgb(5 24 38 / 0.68);
-	border-color: rgb(125 218 255 / 0.28);
+	color: #16425b;
+	background: rgb(255 255 255 / 0.66);
+	border-color: rgb(20 145 199 / 0.24);
 	-webkit-backdrop-filter: blur(12px);
 	backdrop-filter: blur(12px);
 }
 
 :deep(.hero-secondary:hover) {
+	color: #082f49;
+	background: rgb(224 247 255 / 0.9);
+	border-color: rgb(20 145 199 / 0.42);
+}
+
+:global(.dark .hero-greeting) {
+	color: rgb(232 248 255 / 0.94);
+	background: rgb(5 25 39 / 0.64);
+	border-color: rgb(128 220 255 / 0.24);
+	box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.05);
+}
+
+:global(.dark .hero-secondary) {
+	color: rgb(231 248 255 / 0.94);
+	background: rgb(5 24 38 / 0.68);
+	border-color: rgb(125 218 255 / 0.28);
+}
+
+:global(.dark .hero-secondary:hover) {
 	color: #fff;
 	background: rgb(11 53 77 / 0.86);
 	border-color: rgb(132 225 255 / 0.48);

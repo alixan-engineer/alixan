@@ -43,9 +43,15 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .site-header {
-	color: #f7fbff;
-	background: transparent;
-	border-bottom: 1px solid transparent;
+	color: #123247;
+	background: linear-gradient(
+		180deg,
+		rgb(247 252 255 / 0.76),
+		rgb(235 248 255 / 0.48)
+	);
+	border-bottom: 1px solid rgb(20 145 199 / 0.1);
+	-webkit-backdrop-filter: blur(14px) saturate(125%);
+	backdrop-filter: blur(14px) saturate(125%);
 	transition:
 		background-color 240ms ease,
 		border-color 240ms ease,
@@ -54,10 +60,26 @@ onBeforeUnmount(() => {
 }
 
 .site-header--scrolled {
+	background: rgb(255 255 255 / 0.82);
+	border-bottom-color: rgb(20 145 199 / 0.14);
+	box-shadow: 0 12px 36px rgb(17 83 113 / 0.1);
+	-webkit-backdrop-filter: blur(18px) saturate(135%);
+	backdrop-filter: blur(18px) saturate(135%);
+}
+
+:global(.dark .site-header) {
+	color: #f7fbff;
+	background: linear-gradient(
+		180deg,
+		rgb(2 8 16 / 0.74),
+		rgb(3 16 28 / 0.42)
+	);
+	border-bottom-color: rgb(123 211 255 / 0.08);
+}
+
+:global(.dark .site-header--scrolled) {
 	background: rgb(3 10 18 / 0.78);
 	border-bottom-color: rgb(123 211 255 / 0.13);
 	box-shadow: 0 12px 36px rgb(0 0 0 / 0.2);
-	-webkit-backdrop-filter: blur(18px) saturate(135%);
-	backdrop-filter: blur(18px) saturate(135%);
 }
 </style>
