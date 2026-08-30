@@ -5,31 +5,16 @@ const list = ['React', 'Vue', 'Angular', 'Flutter', 'NestJS', 'MongoDB'];
 </script>
 
 <template>
-	<div class="relative isolate h-150 overflow-hidden border-b">
-		<picture
-			class="hero-art absolute inset-0 -z-10 block overflow-hidden pointer-events-none"
-			aria-hidden="true"
-		>
-			<source
-				media="(min-width: 768px)"
-				srcset="/img/hero/hero-art-desktop-v2.webp"
-			/>
-			<img
-				src="/img/hero/hero-art-mobile-v2.webp"
-				alt=""
-				width="1122"
-				height="1402"
-				loading="eager"
-				fetchpriority="high"
-				class="size-full object-cover"
-			/>
-		</picture>
+	<div class="relative isolate h-170 overflow-hidden">
+		<div class="hero-space absolute inset-0 -z-10" aria-hidden="true">
+			<div class="hero-orb" />
+		</div>
 
 		<div
 			class="max-w-section h-full relative z-10 mx-auto flex flex-col items-center justify-center md:gap-10 max-md:gap-8"
 		>
 			<div
-				class="max-md:px-3 max-md:py-1 md:px-5 md:py-2.5 flex items-center max-md:gap-1.5 md:gap-2.5 bg-accent text-accent-foreground border rounded-3xl"
+				class="hero-greeting max-md:px-3 max-md:py-1 md:px-5 md:py-2.5 flex items-center max-md:gap-1.5 md:gap-2.5 border rounded-3xl"
 			>
 				<Sparkles class="max-md:size-4" />
 				<span class="max-md:text-sm md:text-base font-medium">
@@ -47,12 +32,12 @@ const list = ['React', 'Vue', 'Angular', 'Flutter', 'NestJS', 'MongoDB'];
 			<div
 				class="w-full px-4 flex items-center justify-center gap-4 max-md:flex-col"
 			>
-				<CTAButton class="max-md:w-full" />
+				<CTAButton class="hero-primary max-md:w-full" />
 				<Button
 					size="responsive"
 					color="secondary"
 					variant="outlined"
-					class="max-md:w-full"
+					class="hero-secondary max-md:w-full"
 					href="/CV-Alikhan.pdf"
 					target="_blank"
 				>
@@ -79,49 +64,134 @@ const list = ['React', 'Vue', 'Angular', 'Flutter', 'NestJS', 'MongoDB'];
 </template>
 
 <style scoped lang="scss">
-.hero-art {
-	opacity: 0.82;
-	-webkit-mask-image: radial-gradient(
-		ellipse 88% 82% at center,
-		transparent 42%,
-		black 80%
-	);
-	mask-image: radial-gradient(
-		ellipse 88% 82% at center,
-		transparent 42%,
-		black 80%
-	);
+.hero-space {
+	background:
+		radial-gradient(
+			circle at 8% 22%,
+			rgb(82 180 255 / 0.55) 0 0.8px,
+			transparent 1.5px
+		),
+		radial-gradient(
+			circle at 22% 72%,
+			rgb(147 211 255 / 0.42) 0 0.8px,
+			transparent 1.5px
+		),
+		radial-gradient(
+			circle at 38% 14%,
+			rgb(255 255 255 / 0.42) 0 0.7px,
+			transparent 1.4px
+		),
+		radial-gradient(
+			circle at 64% 78%,
+			rgb(74 171 255 / 0.5) 0 0.8px,
+			transparent 1.5px
+		),
+		radial-gradient(
+			circle at 82% 28%,
+			rgb(173 221 255 / 0.4) 0 0.7px,
+			transparent 1.4px
+		),
+		radial-gradient(
+			circle at 94% 66%,
+			rgb(57 163 255 / 0.42) 0 0.8px,
+			transparent 1.5px
+		),
+		linear-gradient(180deg, #020810 0%, #03101c 58%, #02070d 100%);
+	background-size:
+		173px 157px,
+		229px 211px,
+		277px 251px,
+		193px 181px,
+		251px 223px,
+		313px 271px,
+		auto;
+}
+
+.hero-space::after {
+	position: absolute;
+	inset: 0;
+	content: '';
+	background:
+		radial-gradient(
+			ellipse 55% 30% at 50% 67%,
+			rgb(0 158 241 / 0.16),
+			transparent 78%
+		),
+		linear-gradient(
+			90deg,
+			rgb(2 8 16 / 0.94) 0%,
+			transparent 22% 78%,
+			rgb(2 8 16 / 0.94) 100%
+		);
+}
+
+.hero-orb {
+	position: absolute;
+	top: -29rem;
+	left: 50%;
+	width: min(78rem, 134vw);
+	aspect-ratio: 1.55;
+	transform: translateX(-50%);
+	border-radius: 50%;
+	background:
+		radial-gradient(
+			ellipse 66% 54% at 50% 88%,
+			rgb(18 144 204 / 0.42),
+			transparent 64%
+		),
+		radial-gradient(
+			ellipse at 50% 104%,
+			#0b4667 0%,
+			#082b42 35%,
+			#051726 63%,
+			#020810 88%
+		);
+	box-shadow:
+		0 8px 5px -4px rgb(144 240 255 / 0.9),
+		0 16px 18px -8px rgb(0 194 255 / 0.72),
+		0 32px 56px -17px rgb(0 142 255 / 0.58),
+		0 62px 120px -38px rgb(0 151 255 / 0.42);
+}
+
+.hero-greeting {
+	color: rgb(232 248 255 / 0.94);
+	background: rgb(5 25 39 / 0.64);
+	border-color: rgb(128 220 255 / 0.24);
+	box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.05);
+	-webkit-backdrop-filter: blur(12px);
+	backdrop-filter: blur(12px);
+}
+
+:deep(.hero-primary) {
+	color: #03111c;
+	background: linear-gradient(135deg, #eafaff 0%, #8be6ff 100%);
+	border-color: rgb(201 247 255 / 0.9);
+	box-shadow: 0 8px 28px rgb(0 176 255 / 0.2);
+}
+
+:deep(.hero-primary:hover) {
+	background: linear-gradient(135deg, #fff 0%, #a9efff 100%);
+}
+
+:deep(.hero-secondary) {
+	color: rgb(231 248 255 / 0.94);
+	background: rgb(5 24 38 / 0.68);
+	border-color: rgb(125 218 255 / 0.28);
+	-webkit-backdrop-filter: blur(12px);
+	backdrop-filter: blur(12px);
+}
+
+:deep(.hero-secondary:hover) {
+	color: #fff;
+	background: rgb(11 53 77 / 0.86);
+	border-color: rgb(132 225 255 / 0.48);
 }
 
 @media (max-width: 767px) {
-	.hero-art {
-		opacity: 0.58;
-		-webkit-mask-image: radial-gradient(
-			ellipse 92% 72% at center,
-			transparent 38%,
-			black 76%
-		);
-		mask-image: radial-gradient(
-			ellipse 92% 72% at center,
-			transparent 38%,
-			black 76%
-		);
-	}
-}
-
-@media (prefers-reduced-motion: no-preference) {
-	.hero-art img {
-		animation: hero-art-drift 14s ease-in-out infinite alternate;
-	}
-}
-
-@keyframes hero-art-drift {
-	from {
-		transform: scale(1.01);
-	}
-
-	to {
-		transform: scale(1.035);
+	.hero-orb {
+		top: -15rem;
+		width: 165vw;
+		min-width: 40rem;
 	}
 }
 </style>

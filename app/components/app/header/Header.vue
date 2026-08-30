@@ -1,9 +1,30 @@
 <script setup lang="ts">
 import Github from '~/assets/icons/github.svg';
+
+const isScrolled = ref(false);
+
+const updateHeader = (event?: Event) => {
+	const target = event?.target;
+
+	if (target instanceof Element) {
+		isScrolled.value = target.scrollTop > 12;
+	}
+};
+
+onMounted(() => {
+	document.addEventListener('scroll', updateHeader, true);
+});
+
+onBeforeUnmount(() => {
+	document.removeEventListener('scroll', updateHeader, true);
+});
 </script>
 
 <template>
-	<header class="max-md:h-16 md:h-24 border-b">
+	<header
+		class="site-header absolute inset-x-0 top-0 z-50 max-md:h-16 md:h-24"
+		:class="{ 'site-header--scrolled': isScrolled }"
+	>
 		<div
 			class="size-full max-w-container mx-auto px-4 flex items-center justify-between gap-4"
 		>
@@ -19,3 +40,24 @@ import Github from '~/assets/icons/github.svg';
 		</div>
 	</header>
 </template>
+
+<style scoped>
+.site-header {
+	color: #f7fbff;
+	background: transparent;
+	border-bottom: 1px solid transparent;
+	transition:
+		background-color 240ms ease,
+		border-color 240ms ease,
+		box-shadow 240ms ease,
+		backdrop-filter 240ms ease;
+}
+
+.site-header--scrolled {
+	background: rgb(3 10 18 / 0.78);
+	border-bottom-color: rgb(123 211 255 / 0.13);
+	box-shadow: 0 12px 36px rgb(0 0 0 / 0.2);
+	-webkit-backdrop-filter: blur(18px) saturate(135%);
+	backdrop-filter: blur(18px) saturate(135%);
+}
+</style>
