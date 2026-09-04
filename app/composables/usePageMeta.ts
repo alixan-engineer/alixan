@@ -23,6 +23,7 @@ export const usePageMeta = (payload?: PageMetaOptions): void => {
 		ogDescription: metaDescription,
 		ogUrl: siteConfig.url + route.path,
 		ogImage: metaImage,
+		ogImageType: 'image/png',
 		twitterCard: 'summary_large_image',
 		twitterTitle: metaTitle,
 		twitterDescription: metaDescription,

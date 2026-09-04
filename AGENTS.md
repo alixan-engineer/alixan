@@ -43,7 +43,7 @@
 - `app/assets/css/tailwind.css` — Tailwind CSS v4, дизайн-токены, light/dark themes и глобальные base styles.
 - `i18n/locales/en.json`, `ru.json`, `kk.json` — все отображаемые тексты.
 - `public/img/projects/*`, `public/img/startups/*` — оптимизированные изображения карточек; растровые ассеты хранятся преимущественно в WebP.
-- `public/og-image.webp` — Open Graph/Twitter preview 1200×630, путь задается в `app/config/site/site.ts`.
+- `public/og-image.png` — Open Graph/Twitter preview 1200×630, путь задается в `app/config/site/site.ts`.
 - `public/*` — favicon, manifest, CV PDF и остальные статические файлы.
 
 ## Стек и стиль кода
@@ -93,7 +93,7 @@ SEO должно отражать главный сайт экосистемы, 
 - `robots`;
 - JSON-LD для `WebSite`/`Person`, если данные актуальны.
 
-Текущий preview-файл — `public/og-image.webp`, а публичный URL — `https://alixan.kz/og-image.webp`. При смене имени или формата обязательно обновляй `siteConfig.ogImage` и документацию.
+Текущий preview-файл — `public/og-image.png`, а публичный URL — `https://alixan.kz/og-image.png`. При смене имени или формата обязательно обновляй `siteConfig.ogImage` и документацию.
 
 Если меняешь домены:
 

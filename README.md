@@ -69,7 +69,7 @@ The homepage should describe `alixan.kz` as the main ecosystem site, not only as
 https://alixan.kz
 ```
 
-The shared Open Graph and Twitter preview is `public/og-image.webp` (1200×630). Its public URL is configured through `siteConfig.ogImage`; update both the asset and config when changing its name or format.
+The shared Open Graph and Twitter preview is `public/og-image.png` (1200×630). Its public URL is configured through `siteConfig.ogImage`; update both the asset and config when changing its name or format.
 
 ## 📄 CV
 
@@ -105,7 +105,7 @@ public/
   img/
     projects/
     startups/
-  og-image.webp
+  og-image.png
   robots.txt
   site.webmanifest
 ```
