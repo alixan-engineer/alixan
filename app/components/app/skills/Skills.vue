@@ -29,8 +29,10 @@ const categories = [
 		accent: '#09a982',
 		accentEnd: '#42e2c2',
 		skills: [
+			{ id: 'go' },
 			{ id: 'node' },
 			{ id: 'nest' },
+			{ id: 'postgresql' },
 			{ id: 'mongodb' },
 			{ id: 'redis' },
 			{ id: 'docker' },

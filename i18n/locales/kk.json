@@ -9,7 +9,7 @@
 		"about": {
 			"eyebrow": "Ұзақ түйіндемесіз",
 			"title": "Мен туралы қысқаша",
-			"role": "Senior Full Stack бағдарламашы",
+			"role": "Team Lead / Tech Lead",
 			"name": "Жұмажанов Әлихан",
 			"details": {
 				"experience": { "label": "Тәжірибе", "value": "7+ жыл" },
@@ -37,7 +37,7 @@
 			"items": {
 				"figma": "Figma", "photoshop": "Adobe Photoshop", "illustrator": "Adobe Illustrator", "cupertino": "Cupertino Design",
 				"material": "Material Design", "atomic": "Atomic Design", "react": "React", "vue": "Vue", "angular": "Angular",
-				"rxjs": "RxJS", "node": "Node.js", "nest": "NestJS", "mongodb": "MongoDB", "redis": "Redis",
+				"rxjs": "RxJS", "go": "Go", "node": "Node.js", "nest": "NestJS", "postgresql": "PostgreSQL", "mongodb": "MongoDB", "redis": "Redis",
 				"docker": "Docker", "nginx": "Nginx", "flutter": "Flutter", "firebase": "Firebase", "xcode": "Xcode",
 				"android": "Android Studio"
 			}
