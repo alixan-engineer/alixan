@@ -110,5 +110,191 @@
 			"line1": "I step in when there is an idea or chaos → and step out",
 			"line2": "when there is a working product and a clear growth model."
 		}
+	},
+	"projectCase": {
+		"role": "My role",
+		"period": "Period",
+		"focus": "Focus",
+		"work": "What I worked on",
+		"stack": "Stack",
+		"achievements": "Achievements",
+		"experience": "Experience gained",
+		"items": {
+			"kks": {
+				"metaTitle": "My role at KKS — Alixan",
+				"metaDescription": "Alikhan Zhumazhanov's role in building the KKS utility billing system: frontend architecture, integrations, stack and achievements.",
+				"headline": "Leading the frontend of a utility billing system",
+				"role": "Senior Frontend Developer",
+				"period": "November 2024 — July 2026",
+				"focus": "Billing, frontend architecture, integrations",
+				"intro": "I owned the frontend direction at KKS, from architectural decisions and complex user flows to release quality. The main challenge was turning rules for charges and recalculations into clear working tools for settlement centers.",
+				"topics": {
+					"billing": {
+						"title": "Charges and recalculations",
+						"description": "I designed interfaces for collecting meter readings, calculating utility charges and handling recalculations. I focused on states, validation and action order so complex domain logic remained clear to operators.",
+						"caption": "Billing screen or a flow for working with charges."
+					},
+					"architecture": {
+						"title": "Scalable frontend architecture",
+						"description": "I established the application structure and shared approaches for components, data and forms. The architecture made it possible to add new calculation flows while keeping a large system manageable.",
+						"caption": "A system section showing a complex user flow."
+					},
+					"integration": {
+						"title": "Backend integration",
+						"description": "I aligned contracts and handled complex data exchange states with Java services. This reduced errors and inconsistencies between the interface and calculation logic.",
+						"caption": "A screen displaying data from calculation services."
+					}
+				},
+				"stackDescription": "The project technologies supported a complex Angular interface, server-side calculation logic and storage of billing data.",
+				"stack": ["Angular", "Java", "PostgreSQL"],
+				"achievements": [
+					"Built the frontend direction independently and owned the quality of the result.",
+					"Developed the frontend of a billing system deployed and used in settlement centers.",
+					"Turned complex charge and recalculation logic into clear user flows.",
+					"Established stable integration between the frontend and calculation services."
+				],
+				"experience": "The project deepened my experience of independently leading a large frontend area. I learned to understand a complex domain quickly, express business rules through interfaces and make architectural decisions with future system growth in mind."
+			},
+			"halyk": {
+				"metaTitle": "My role at Halyk Bank — Alixan",
+				"metaDescription": "Alikhan Zhumazhanov's role in Halyk Bank installment and lending products: frontend stabilization, stack and achievements.",
+				"headline": "Stabilizing key banking products",
+				"role": "Head Frontend Developer",
+				"period": "March — May 2026",
+				"focus": "Installments, lending, frontend stability",
+				"intro": "I joined two important banking products: installments and lending. In a short period, I understood the codebase, resolved critical issues and helped restore a predictable development process in an environment with strict reliability requirements.",
+				"topics": {
+					"products": {
+						"title": "Installments and lending",
+						"description": "I developed user flows for financial products and worked with the business on requirements. Every change accounted for data accuracy, edge cases and its effect on the customer journey.",
+						"caption": "An installment or lending user flow."
+					},
+					"stability": {
+						"title": "Architecture and stability",
+						"description": "I found and fixed architectural issues and critical defects that made the application unstable. I brought key frontend areas into a clearer and more predictable structure.",
+						"caption": "A screen from one of the stabilized banking modules."
+					},
+					"workflow": {
+						"title": "Restoring the development workflow",
+						"description": "I synchronized dev and master branches that had diverged by more than 700 commits, carefully restoring the team's workflow. This reduced conflict risk and allowed releases to continue from an up-to-date codebase.",
+						"caption": "Functionality released after project stabilization."
+					}
+				},
+				"stackDescription": "The frontend used Angular and communicated with banking services written in C# and Go.",
+				"stack": ["Angular", "C#", "Go"],
+				"achievements": [
+					"Joined two key banking products at once: installments and lending.",
+					"Synchronized branches that had diverged by more than 700 commits and restored the development workflow.",
+					"Fixed critical defects and architectural issues in an unstable frontend application.",
+					"Worked directly with the business on high-load financial services."
+				],
+				"experience": "Working at the bank strengthened my understanding of systems where the cost of error is especially high. I gained hands-on experience in rapid technical audits, safe stabilization of a large codebase and communication between engineering and business."
+			},
+			"alser": {
+				"metaTitle": "My role at Alser.kz — Alixan",
+				"metaDescription": "From Frontend Developer to Head of Frontend at Alser.kz: online store, internal systems, team, stack and achievements.",
+				"headline": "From interface development to frontend leadership",
+				"role": "Frontend Developer → Head of Frontend",
+				"period": "September 2021 — September 2022",
+				"focus": "E-commerce, internal systems, team",
+				"intro": "At Alser, I grew from a frontend developer into the head of the discipline. I was responsible for three connected products: the online store, an internal admin panel and a warehouse ERP, while coordinating the frontend team.",
+				"topics": {
+					"storefront": {
+						"title": "Online store",
+						"description": "I developed core e-commerce flows including the catalog, product pages and purchase journey. I fixed critical defects and improved interfaces to keep the site reliable for a large audience.",
+						"caption": "A key customer flow in the Alser.kz online store."
+					},
+					"operations": {
+						"title": "Admin panel and warehouse ERP",
+						"description": "I worked on internal tools for managing data and warehouse operations. I translated employee needs into interfaces designed for frequent operational use.",
+						"caption": "An internal system or warehouse process screen."
+					},
+					"leadership": {
+						"title": "Frontend leadership",
+						"description": "I coordinated developer tasks, made technical decisions and monitored delivery quality across three products. The role combined hands-on development with responsibility for the team's overall result.",
+						"caption": "One of the products developed by the frontend team."
+					}
+				},
+				"stackDescription": "The ecosystem included a web storefront, internal Angular apps, Ionic mobile solutions and a C# backend.",
+				"stack": ["Angular", "Nuxt", "Ionic", "C#"],
+				"achievements": [
+					"Grew from Frontend Developer to Head of Frontend and took ownership of the discipline.",
+					"Led the frontend team and coordinated development across three key products.",
+					"Completed a key product in eight months after it had remained unfinished for more than two years.",
+					"Improved e-commerce UX and stability by resolving critical production defects."
+				],
+				"experience": "Alser gave me my first major experience leading a technical discipline. I learned to divide attention between a public product, internal systems and a team while preserving development pace and ownership of quality."
+			},
+			"anticor": {
+				"metaTitle": "My role in the Antikor project — Alixan",
+				"metaDescription": "Alikhan Zhumazhanov's role in developing the Antikor corporate portal: four modules, stack and experience gained.",
+				"headline": "A corporate portal with four key modules",
+				"role": "Junior Frontend Developer → Frontend Developer",
+				"period": "January 2019 — August 2020",
+				"focus": "Corporate portal, analytics, reliability",
+				"intro": "I contributed to a corporate portal for Kazakhstan's Anti-Corruption Agency. I built frontend interfaces for a system spanning several domains and progressed from Junior to an independent Frontend Developer.",
+				"topics": {
+					"portal": {
+						"title": "Unified corporate portal",
+						"description": "I developed interfaces for employees' daily work and brought different processes into a shared system. I followed the stability and predictability requirements of a large government project.",
+						"caption": "The corporate portal home screen or navigation."
+					},
+					"modules": {
+						"title": "HR, analytics and prevention",
+						"description": "I worked on four key modules: HR, analytics, prevention and the divisions portal. For each area, I built clear forms, tables and data workflows.",
+						"caption": "One of the system's functional modules."
+					},
+					"maintenance": {
+						"title": "Maintenance and development",
+						"description": "I fixed defects, improved existing interfaces and maintained the codebase as requirements evolved. Incremental changes increased system reliability and usability.",
+						"caption": "An interface after a user flow was developed or improved."
+					}
+				},
+				"stackDescription": "The client application was built with Angular and integrated with C# backend services.",
+				"stack": ["Angular", "C#"],
+				"achievements": [
+					"Built frontend functionality for a corporate portal in a major government project.",
+					"Contributed to four key modules: HR, analytics, prevention and the divisions portal.",
+					"Improved reliability and usability through maintenance, defect fixes and interface development.",
+					"Progressed from Junior to an independent Frontend Developer."
+				],
+				"experience": "This project established my foundation in commercial frontend development: working with a large system, collaborating within a team, paying close attention to requirements and taking responsibility for long-lived interfaces."
+			},
+			"ryware": {
+				"metaTitle": "My role at Ryware — Alixan",
+				"metaDescription": "Senior Frontend Developer role at Ryware: technical debt, performance, client products, stack and achievements.",
+				"headline": "Developing products for international clients",
+				"role": "Senior Frontend Developer",
+				"period": "October 2022 — July 2023",
+				"focus": "Technical debt, performance, delivery",
+				"intro": "At Ryware, I developed production applications for international clients. My role combined resolving accumulated technical issues, launching new modules, optimizing interfaces and communicating directly with customers.",
+				"topics": {
+					"refactoring": {
+						"title": "Technical debt",
+						"description": "I untangled problematic frontend areas, simplified their structure and removed causes of recurring defects. This made future development faster and reduced the risk of changes.",
+						"caption": "An application module after rework or refactoring."
+					},
+					"performance": {
+						"title": "Interface performance",
+						"description": "I optimized loading speed and responsiveness. I analyzed bottlenecks and prioritized improvements users could notice in real scenarios.",
+						"caption": "A product interface whose performance was improved."
+					},
+					"delivery": {
+						"title": "New modules and client work",
+						"description": "I helped launch new modules and clarified requirements directly with clients. I translated business needs into technical decisions and supported functionality through production release.",
+						"caption": "A new module in one of the client products."
+					}
+				},
+				"stackDescription": "Angular powered the client applications, with server-side services built in C#.",
+				"stack": ["Angular", "C#"],
+				"achievements": [
+					"Resolved accumulated frontend technical debt and made further development easier.",
+					"Improved interface loading speed and responsiveness.",
+					"Helped launch new modules and maintained production applications.",
+					"Worked directly with international clients and implemented business requirements accurately."
+				],
+				"experience": "Ryware strengthened my senior-level skills: I learned to enter different client products quickly, balance refactoring with feature delivery and discuss technical decisions with clients in business terms."
+			}
+		}
 	}
 }

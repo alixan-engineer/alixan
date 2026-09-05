@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { RouteLocationRaw } from 'vue-router';
+
 interface CardProps {
 	image?: string;
 	imageAlt?: string;
@@ -6,6 +8,7 @@ interface CardProps {
 	description?: string;
 	button?: string;
 	buttonHref?: string;
+	buttonTo?: RouteLocationRaw;
 }
 
 withDefaults(defineProps<CardProps>(), {
@@ -14,6 +17,7 @@ withDefaults(defineProps<CardProps>(), {
 	description: undefined,
 	button: undefined,
 	buttonHref: undefined,
+	buttonTo: undefined,
 });
 
 const emit = defineEmits<{
@@ -45,9 +49,10 @@ const emit = defineEmits<{
 				color="secondary"
 				class="w-full"
 				:href="buttonHref"
-				:target="buttonHref ? '_blank' : undefined"
-				rel="noreferrer"
-				@click="buttonHref ? undefined : emit('onTap')"
+				:to="buttonTo"
+				:target="buttonHref && !buttonTo ? '_blank' : undefined"
+				:rel="buttonHref && !buttonTo ? 'noreferrer' : undefined"
+				@click="buttonHref || buttonTo ? undefined : emit('onTap')"
 			>
 				{{ $t(button) }}
 				<template #trailing>

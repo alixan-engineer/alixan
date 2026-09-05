@@ -8,13 +8,11 @@ const list = ['React', 'Vue', 'Angular', 'Flutter', 'NestJS', 'MongoDB'];
 	<div class="hero relative isolate h-170 overflow-hidden">
 		<div
 			class="hero-space hero-space--dark absolute inset-0 -z-10"
-			aria-hidden="true"
 		>
 			<div class="hero-orb hero-orb--dark" />
 		</div>
 		<div
 			class="hero-space hero-space--light absolute inset-0 -z-10"
-			aria-hidden="true"
 		>
 			<div class="hero-orb hero-orb--light" />
 		</div>

@@ -1,35 +1,8 @@
 <script setup lang="ts">
 import { ArrowRight } from '@lucide/vue';
+import { commercialProjects } from '~/config/projects';
 
-const { t } = useI18n();
-
-const list = computed(() => [
-	{
-		img: '/img/projects/kks.webp',
-		title: t('home.projects.items.kks.title'),
-		description: t('home.projects.items.kks.description'),
-	},
-	{
-		img: '/img/projects/halyk.svg',
-		title: t('home.projects.items.halyk.title'),
-		description: t('home.projects.items.halyk.description'),
-	},
-	{
-		img: '/img/projects/alser.webp',
-		title: t('home.projects.items.alser.title'),
-		description: t('home.projects.items.alser.description'),
-	},
-	{
-		img: '/img/projects/anticor.webp',
-		title: t('home.projects.items.anticor.title'),
-		description: t('home.projects.items.anticor.description'),
-	},
-	{
-		img: '/img/projects/ryware.webp',
-		title: t('home.projects.items.ryware.title'),
-		description: t('home.projects.items.ryware.description'),
-	},
-]);
+const localePath = useLocalePath();
 </script>
 
 <template>
@@ -45,12 +18,18 @@ const list = computed(() => [
 			:space-between="24"
 			class="w-full h-auto cursor-grab"
 		>
-			<swiper-slide v-for="(item, i) in list" :key="i" class="w-70 h-130">
+			<swiper-slide
+				v-for="item in commercialProjects"
+				:key="item.slug"
+				class="w-70 h-130"
+			>
 				<Card
-					:image="item.img"
-					:title="item.title"
-					:description="item.description"
-					:button="$t('home.projects.role')"
+					:image="item.image"
+					:image-alt="`home.projects.items.${item.slug}.title`"
+					:title="`home.projects.items.${item.slug}.title`"
+					:description="`home.projects.items.${item.slug}.description`"
+					button="home.projects.role"
+					:button-to="localePath(`/projects/${item.slug}`)"
 				>
 					<template #trailing>
 						<ArrowRight />

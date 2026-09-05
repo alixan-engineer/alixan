@@ -38,7 +38,7 @@ onBeforeUnmount(() => {
 	<header
 		:class="
 			cn(
-				'w-full h-14',
+				'w-full h-18',
 				'sticky top-0 bg-background',
 				'border-b transition-colors duration-200',
 				isLargeTitleVisible ? 'border-transparent' : 'border-border',
@@ -60,7 +60,7 @@ onBeforeUnmount(() => {
 			<h1
 				:class="
 					cn(
-						'flex-1 text-xl font-semibold',
+						'flex-1 text-xl font-semibold whitespace-nowrap overflow-hidden text-ellipsis',
 						'transition-all duration-200 ease-out',
 						titleAlign === 'center' ? 'text-center' : '',
 						titleAlign === 'responsive' ? 'max-md:text-center' : '',
