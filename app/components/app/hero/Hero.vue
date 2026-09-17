@@ -41,7 +41,7 @@ const list = ['React', 'Vue', 'Angular', 'Flutter', 'Node.js', 'Go'];
 					color="secondary"
 					variant="outlined"
 					class="hero-secondary max-md:w-full"
-					href="/CV-Alikhan.pdf"
+					href="/CV.pdf"
 					target="_blank"
 				>
 					{{ $t('home.hero.resume') }}

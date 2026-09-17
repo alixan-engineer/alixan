@@ -15,6 +15,14 @@ export default defineNuxtConfig({
 	features: { inlineStyles: true },
 	vite: {
 		plugins: [tailwindcss()],
+		optimizeDeps: {
+			include: [
+				'@lucide/vue',
+				'@vue/devtools-core',
+				'@vue/devtools-kit',
+				'swiper/element/bundle',
+			],
+		},
 	},
 	components: [{ path: '~/components', pathPrefix: false }],
 	modules: [

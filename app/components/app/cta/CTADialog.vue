@@ -15,9 +15,9 @@ const list = [
 		label: '@alixan_engineer',
 	},
 	{
-		link: 'mailto:alixan.engineer@gmail.com',
+		link: 'mailto:hi@alixan.kz',
 		icon: '/img/contacts/gmail.svg',
-		label: 'alixan.engineer@gmail.com',
+		label: 'hi@alixan.kz',
 	},
 ] as const;
 </script>

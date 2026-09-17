@@ -18,7 +18,7 @@ The site introduces who Alikhan is, what he builds, which products are active, a
 
 - 🎯 Personal ecosystem hub for `Alixan` and `Alikhan Zhumazhanov`
 - 🧑‍💻 Clear profile for HR, companies, developers and partners
-- 📄 Resume/CV download from `public/CV-Alikhan.pdf`
+- 📄 Resume/CV download from `public/CV.pdf`
 - 🧩 Visible product navigation for Alixan UI and other projects
 - 🌍 Localized content with English, Russian and Kazakh locales
 - 🔎 Shared SEO metadata, Open Graph and Twitter card configuration
@@ -76,7 +76,7 @@ The shared Open Graph and Twitter preview is `public/og-image.png` (1200×630). 
 The public resume PDF is stored at:
 
 ```txt
-public/CV-Alikhan.pdf
+public/CV.pdf
 ```
 
 Resume buttons and links should point to this file unless the PDF filename is intentionally changed everywhere.
@@ -99,7 +99,7 @@ app/
 i18n/
   locales/
 public/
-  CV-Alikhan.pdf
+  CV.pdf
   favicon.ico
   icons/
   img/
