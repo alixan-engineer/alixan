@@ -8,6 +8,7 @@ interface CardProps {
 	description?: string;
 	button?: string;
 	href?: string;
+	to?: RouteLocationRaw;
 	buttonHref?: string;
 	buttonTo?: RouteLocationRaw;
 }
@@ -18,6 +19,7 @@ withDefaults(defineProps<CardProps>(), {
 	description: undefined,
 	button: undefined,
 	href: undefined,
+	to: undefined,
 	buttonHref: undefined,
 	buttonTo: undefined,
 });
@@ -29,8 +31,14 @@ const emit = defineEmits<{
 
 <template>
 	<article class="relative size-full flex flex-col border rounded-4xl">
+		<NuxtLink
+			v-if="to"
+			:to="to"
+			:aria-label="$t(title)"
+			class="absolute inset-0 z-10 rounded-4xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
+		/>
 		<a
-			v-if="href"
+			v-else-if="href"
 			:href="href"
 			:aria-label="$t(title)"
 			target="_blank"
@@ -54,7 +62,7 @@ const emit = defineEmits<{
 				</p>
 			</div>
 			<span
-				v-if="button && href"
+				v-if="button && (href || to)"
 				class="flex h-11 w-full items-center justify-center gap-2 rounded-xl border border-secondary bg-secondary px-4 text-base font-medium text-secondary-foreground [&_svg]:size-6"
 			>
 				{{ $t(button) }}

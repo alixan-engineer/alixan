@@ -29,7 +29,7 @@ const localePath = useLocalePath();
 					:title="`home.projects.items.${item.slug}.title`"
 					:description="`home.projects.items.${item.slug}.description`"
 					button="home.projects.role"
-					:button-to="localePath(`/projects/${item.slug}`)"
+					:to="localePath(`/projects/${item.slug}`)"
 				>
 					<template #trailing>
 						<ArrowRight />
