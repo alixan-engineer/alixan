@@ -12,8 +12,8 @@ const list = computed(() => [
 	},
 	{
 		link: 'https://kaspibot.alixan.kz/',
-		img: '/img/startups/kaspi-bot.webp',
-		title: 'Kaspi Bot',
+		img: '/img/startups/kaspi-bot.png',
+		title: 'Alixan Bot',
 		description: t('home.products.items.kaspi.description'),
 	},
 ]);
@@ -38,7 +38,7 @@ const list = computed(() => [
 					:title="item.title"
 					:description="item.description"
 					:button="$t('home.products.open')"
-					:button-href="item.link"
+					:href="item.link"
 				>
 					<template #trailing>
 						<ExternalLink />

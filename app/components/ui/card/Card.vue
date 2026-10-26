@@ -7,6 +7,7 @@ interface CardProps {
 	title: string;
 	description?: string;
 	button?: string;
+	href?: string;
 	buttonHref?: string;
 	buttonTo?: RouteLocationRaw;
 }
@@ -16,6 +17,7 @@ withDefaults(defineProps<CardProps>(), {
 	imageAlt: '',
 	description: undefined,
 	button: undefined,
+	href: undefined,
 	buttonHref: undefined,
 	buttonTo: undefined,
 });
@@ -26,7 +28,15 @@ const emit = defineEmits<{
 </script>
 
 <template>
-	<article class="size-full flex flex-col border rounded-4xl">
+	<article class="relative size-full flex flex-col border rounded-4xl">
+		<a
+			v-if="href"
+			:href="href"
+			:aria-label="$t(title)"
+			target="_blank"
+			rel="noreferrer"
+			class="absolute inset-0 z-10 rounded-4xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
+		/>
 		<img
 			v-if="image"
 			:src="image"
@@ -43,8 +53,15 @@ const emit = defineEmits<{
 					{{ $t(description) }}
 				</p>
 			</div>
+			<span
+				v-if="button && href"
+				class="flex h-11 w-full items-center justify-center gap-2 rounded-xl border border-secondary bg-secondary px-4 text-base font-medium text-secondary-foreground [&_svg]:size-6"
+			>
+				{{ $t(button) }}
+				<slot name="trailing" />
+			</span>
 			<Button
-				v-if="button"
+				v-else-if="button"
 				variant="filled"
 				color="secondary"
 				class="w-full"
